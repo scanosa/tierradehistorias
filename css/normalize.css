@@ -20,10 +20,17 @@ ul, ol {
     list-style-type: none;
 }
 
+
 p{
     font-size:var(--text-regular);
 }
 
 img{
     width: 100%; /* Que tome el 100 del contenedor padre para que no se haga overflow, pero si complica, sacar */
+}
+
+button{
+    font-family:inherit;
+    border:none;
+    border-radius:0;
 }
