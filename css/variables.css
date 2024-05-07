@@ -1,0 +1,33 @@
+:root{
+
+    /*PALETA DE COLORES*/
+    --aqua:#00E4F1;
+    --orange:#FF9362;
+    --red:#FF5B74;
+    --lemon:#EFF395;
+    --dark-aqua:#01BABF;
+
+    --light-lemon:#FCFFBF;
+    --light-red:#FFC6AC;
+    --ultralight-red:#FFF1EA;
+    --black-text:#171717;
+   
+
+    /*TIPOGRAFÍAS*/
+    --base-font: "Nunito", sans-serif;
+    --headings-font: "Fredoka", sans-serif;
+   
+    /*FONT-SIZES*/
+    --heading1: 3.812rem; /*61px*/
+    --heading2: 3.062rem; /*49px*/
+    --heading3: 2.438rem; /*39px*/
+    --heading4: 1.938rem; /*31px*/
+    --heading5: 1.562rem; /*25px*/
+    --heading6: 1.250rem; /*20px*/
+
+    --text-large: 1rem;/*16px*/
+    --text-regular:0.812rem; /*13px*/
+    --text-small: 0.625rem; /*10px*/
+
+    /*ESPACIOS*/
+}
