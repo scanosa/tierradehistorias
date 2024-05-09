@@ -1,8 +1,14 @@
-/*Importamos fuentes Nunito y Fredoka*/
+/*Importamos fuentes Nunito y Fredoka para el sitio, y KG Be Still and Know para el nombre del sitio*/
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url(../img/KGBeStillAndKnow.ttf);
 /*Importamos los css auxiliares de variables y normalización*/
 @import url(./normalize.css);
 @import url(./variables.css);
+
+
+
+
+
 
 /*Estilos de iconify para iconos de redes sociales*/
 .gg--facebook {
@@ -35,7 +41,6 @@
 
 /*Estilos para el accordion de Preguntas Frecuentes faq.html*/
 
-/* Le doy estilos a los botones del acordeón*/
 .accordion {
   background-color: #eee;
   color: #444;
@@ -58,3 +63,4 @@
   display: none;
   overflow: hidden;
 }
+
