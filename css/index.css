@@ -50,12 +50,16 @@
   
   background-color: var(--aqua);
   padding:30px 40px 30px 40px;
+ 
+}
+
+.footer_container{
   display: flex;
   justify-content: space-between;
 }
 
 .footer_logo img{
-  width: 100px;
+  width: 110px;
 }
 
 .footer_menu>p, .footer_rrss>p{
@@ -72,6 +76,12 @@
  .footer_rrss_iconos{
   display: flex;
   gap:2rem;
+ }
+
+ .footer>p{
+  font-size: var(--text-regular);
+  margin-top:2rem;
+  text-align: center;
  }
 
 /*Estilos de iconify para iconos de redes sociales*/
