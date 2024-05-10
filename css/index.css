@@ -34,8 +34,14 @@
 }
 
 .navbar_links li{
-  padding: 1rem 1rem;
+  padding: 10px 20px 10px 20px;
+  border-radius:15px;
+  transition: background-color .3s ease;
 }
+
+.navbar_links li:hover{
+  background-color: var(--lemon);
+  }
 
 .navbar_button{
   color:var(--black-text);
@@ -44,6 +50,13 @@
   background-color: var(--red);
   padding: 10px 20px 10px 20px;
   border-radius: 15px;
+  transition: background-color .3s ease;
+
+}
+
+.navbar_button:hover{
+  background-color:var(--dark-red);
+  color:white;
 }
 
 .footer{
