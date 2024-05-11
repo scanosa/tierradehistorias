@@ -150,7 +150,7 @@
   display: none;
   overflow: hidden;
 }
-
+/*sume estilo al box-grid*/
 .grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
