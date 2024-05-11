@@ -151,3 +151,14 @@
   overflow: hidden;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 30px;
+  text-align: center;
+  margin: 20px;
+}
