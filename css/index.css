@@ -1,8 +1,101 @@
-/*Importamos fuentes Nunito y Fredoka*/
+/*Importamos fuentes Nunito y Fredoka para el sitio, y KG Be Still and Know para el nombre del sitio*/
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url(../img/KGBeStillAndKnow.ttf);
 /*Importamos los css auxiliares de variables y normalización*/
 @import url(./normalize.css);
 @import url(./variables.css);
+
+
+/*ESTILOS HEADER Y FOOTER*/
+.header>img{
+  position: absolute;
+  z-index: 0;
+}
+
+.header_navbar{
+  padding:20px 40px 20px 40px;
+  position: relative;
+  top:0;
+  z-index: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_logo img{
+  max-width: 130px;
+}
+
+.navbar_links{
+  display: flex;
+  justify-content: space-evenly;
+  font-size:var(--text-large);
+  font-weight: 700;
+}
+
+.navbar_links li{
+  padding: 10px 20px 10px 20px;
+  border-radius:15px;
+  transition: background-color .3s ease;
+}
+
+.navbar_links li:hover{
+  background-color: var(--lemon);
+  }
+
+.navbar_button{
+  color:var(--black-text);
+  font-size: var(--text-large);
+  font-weight: 600;
+  background-color: var(--red);
+  padding: 10px 20px 10px 20px;
+  border-radius: 15px;
+  transition: background-color .3s ease;
+
+}
+
+.navbar_button:hover{
+  background-color:var(--dark-red);
+  color:white;
+}
+
+.footer{
+  
+  background-color: var(--aqua);
+  padding:30px 40px 30px 40px;
+ 
+}
+
+.footer_container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_logo img{
+  width: 110px;
+}
+
+.footer_menu>p, .footer_rrss>p{
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.footer_links li a{
+  font-size: var(--text-medium);
+  line-height: 1.5rem;
+ }
+
+ .footer_rrss_iconos{
+  display: flex;
+  gap:2rem;
+ }
+
+ .footer>p{
+  font-size: var(--text-regular);
+  margin-top:2rem;
+  text-align: center;
+ }
 
 /*Estilos de iconify para iconos de redes sociales*/
 .gg--facebook {
@@ -32,3 +125,29 @@
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
   }
+
+/*Estilos para el accordion de Preguntas Frecuentes faq.html*/
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 18px 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
