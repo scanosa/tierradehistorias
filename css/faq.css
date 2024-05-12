@@ -1,0 +1,81 @@
+/*Estilos para el accordion de Preguntas Frecuentes faq.html*/
+
+.accordion {
+    background-color: var(--light-red);
+    color: var(--black-text);
+    font-size:var(--text-large);
+    font-weight: 700;
+    cursor: pointer;
+    padding: 18px;
+    display:block;
+    margin:auto;
+    width: 80%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .eva--arrow-down-fill {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 17a1.72 1.72 0 0 1-1.33-.64l-4.21-5.1a2.1 2.1 0 0 1-.26-2.21A1.76 1.76 0 0 1 7.79 8h8.42a1.76 1.76 0 0 1 1.59 1.05a2.1 2.1 0 0 1-.26 2.21l-4.21 5.1A1.72 1.72 0 0 1 12 17'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+  
+  .active, .accordion:hover {
+    background-color: var(--red);
+  }
+
+  
+  .panel {
+    display: block;
+    margin:auto;
+    width: 80%;
+    padding: 18px 18px;
+    background-color: var(--ultralight-red);
+    display: none;
+    overflow:auto;
+  }
+
+  .panel p{
+    font-size:var(--text-large);
+  }
+  
+body{
+    background-color: var(--ultralight-red);
+}
+
+/* .contenedor{
+    display: flex;
+    align-items: center;
+    gap:10em;
+}*/
+
+.preguntas_acordeon{
+    width: 75vw;
+    margin:auto;
+}
+
+.preguntas_titulo{
+    text-align:center;
+    font-family: var(--headings-font);
+    font-weight: 600;
+    font-size: var(--heading2);
+    margin-bottom:1rem;
+    }
+
+.preguntas_imagen img{
+    width:10vw;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 2rem;
+}
