@@ -1,144 +1,136 @@
 /*Importamos fuentes Nunito y Fredoka para el sitio, y KG Be Still and Know para el nombre del sitio*/
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url(../img/KGBeStillAndKnow.ttf);
 /*Importamos los css auxiliares de variables y normalización*/
 @import url(./normalize.css);
 @import url(./variables.css);
-
+@import url(./faq.css);
 
 /*ESTILOS HEADER Y FOOTER*/
-.header>img{
+header {
+  margin-bottom: 3rem;
+}
+.header > img {
   position: absolute;
   z-index: 0;
 }
 
-.header_navbar{
-  padding:20px 40px 20px 40px;
+.header_navbar {
+  padding: 20px 40px 20px 40px;
   position: relative;
-  top:0;
+  top: 0;
   z-index: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar_logo img{
+.navbar_logo img {
   max-width: 130px;
 }
 
-.navbar_links{
+.navbar_links {
   display: flex;
   justify-content: space-evenly;
-  font-size:var(--text-large);
+  font-size: var(--text-large);
   font-weight: 700;
 }
 
-.navbar_links li{
+.navbar_links li {
   padding: 10px 20px 10px 20px;
-  border-radius:15px;
-  transition: background-color .3s ease;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
 }
 
-.navbar_links li:hover{
+.navbar_links li:hover {
   background-color: var(--lemon);
-  }
+}
 
-.navbar_button{
-  color:var(--black-text);
+.navbar_button {
+  color: var(--black-text);
   font-size: var(--text-large);
   font-weight: 600;
   background-color: var(--red);
   padding: 10px 20px 10px 20px;
   border-radius: 15px;
-  transition: background-color .3s ease;
-
+  transition: background-color 0.3s ease;
 }
 
-.navbar_button:hover{
-  background-color:var(--dark-red);
-  color:white;
+.navbar_button:hover {
+  background-color: var(--dark-red);
+  color: white;
 }
 
-.footer{
-  
+footer {
+  margin-top: 3rem;
+}
+
+.footer {
   background-color: var(--aqua);
-  padding:30px 40px 30px 40px;
- 
+  padding: 30px 40px 30px 40px;
 }
 
-.footer_container{
+.footer_container {
   display: flex;
   justify-content: space-between;
 }
 
-.footer_logo img{
+.footer_logo img {
   width: 110px;
 }
 
-.footer_menu>p, .footer_rrss>p{
+.footer_menu > p,
+.footer_rrss > p {
   font-size: 1rem;
   font-weight: bolder;
   margin-bottom: 1rem;
 }
 
-.footer_links li a{
+.footer_links li a {
   font-size: var(--text-medium);
   line-height: 1.5rem;
- }
+}
 
- .footer_rrss_iconos{
+.footer_rrss_iconos {
   display: flex;
-  gap:2rem;
- }
+  gap: 2rem;
+}
 
- .footer>p{
+.footer > p {
   font-size: var(--text-regular);
-  margin-top:2rem;
+  margin-top: 2rem;
   text-align: center;
- }
+}
 
 /*Estilos de iconify para iconos de redes sociales*/
 .gg--facebook {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z'/%3E%3C/svg%3E");
-    background-color: currentColor;
-    -webkit-mask-image: var(--svg);
-    mask-image: var(--svg);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-  }
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
 
 .bi--instagram {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' d='M8 0C5.829 0 5.556.01 4.703.048C3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7C.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297c.04.852.174 1.433.372 1.942c.205.526.478.972.923 1.417c.444.445.89.719 1.416.923c.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417c.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046c.78.035 1.204.166 1.486.275c.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485c.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598c-.28.11-.704.24-1.485.276c-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598a2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485c-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486c.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276c.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92a.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217a4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334a2.667 2.667 0 0 1 0-5.334'/%3E%3C/svg%3E");
-    background-color: currentColor;
-    -webkit-mask-image: var(--svg);
-    mask-image: var(--svg);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-  }
-
-/*Estilos para el accordion de Preguntas Frecuentes faq.html*/
-
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' d='M8 0C5.829 0 5.556.01 4.703.048C3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7C.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297c.04.852.174 1.433.372 1.942c.205.526.478.972.923 1.417c.444.445.89.719 1.416.923c.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417c.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046c.78.035 1.204.166 1.486.275c.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485c.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598c-.28.11-.704.24-1.485.276c-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598a2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485c-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486c.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276c.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92a.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217a4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334a2.667 2.667 0 0 1 0-5.334'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
 }
+<<<<<<< HEAD
 
 .active, .accordion:hover {
   background-color: #ccc;
@@ -162,3 +154,5 @@
   text-align: center;
   margin: 20px;
 }
+=======
+>>>>>>> 976fbb3f264671233e7e96111b360399241e99ff
