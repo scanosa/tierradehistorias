@@ -73,6 +73,10 @@
   color: white;
 }
 
+.navbar_fondo{
+  position:absolute;
+}
+
 footer {
   margin-top: 3rem;
 }
