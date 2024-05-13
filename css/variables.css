@@ -17,6 +17,7 @@
     /*TIPOGRAFÍAS*/
     --base-font: "Nunito", sans-serif;
     --headings-font: "Fredoka", sans-serif;
+    --nombre-font: "TdH", sans-serif;
    
     /*FONT-SIZES*/
     --heading1: 3.75rem; /*60px*/
@@ -32,4 +33,6 @@
     --text-small: 0.625rem; /*10px*/
 
     /*ESPACIOS*/
+    --spacing48: 3rem; /*48px*/
+    --spacing24: 1.4rem; /*24px*/
 }

@@ -1,11 +1,23 @@
 /*Importamos fuentes Nunito y Fredoka para el sitio, y KG Be Still and Know para el nombre del sitio*/
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-@import url(../img/KGBeStillAndKnow.ttf);
+/* @import url('../img/KGBeStillAndKnow.ttf'); */
+
 /*Importamos los css auxiliares de variables y normalización*/
+
 @import url(./normalize.css);
 @import url(./variables.css);
 @import url(./faq.css);
 
+@font-face {
+  font-family: "TdH";
+  src: url(../img/KGBeStillAndKnow.ttf);
+}
+
+
+.container{
+  max-width:1200px;
+  margin:0 auto;
+}
 
 /*ESTILOS HEADER Y FOOTER*/
 
@@ -15,7 +27,7 @@
 }
 
 .header_navbar {
-  padding: 20px 40px 0px 40px;
+  padding: 20px 0px 0px 0px;
   position: relative;
   top: 0;
   z-index: 10000;
@@ -47,7 +59,7 @@
 }
 
 .navbar_button {
-  color: var(--black-text);
+  color: white;
   font-size: var(--text-large);
   font-weight: 600;
   background-color: var(--red);
@@ -68,6 +80,7 @@ footer {
 .footer {
   background-color: var(--aqua);
   padding: 30px 40px 30px 40px;
+ 
 }
 
 .footer_container {
@@ -140,7 +153,12 @@ footer {
  }
 
 .banner_content{
-  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+ }
+
+.banner_innerContent{
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -150,19 +168,29 @@ footer {
   
 
 .banner_title{
+ 
   font-family: var(--headings-font);
   font-size:var(--heading2);
   font-weight: 700;
+  color:var( --black-text);
   line-height: var(--heading1);
   text-align: right;
+  margin-bottom: var(--spacing24);
+  margin-top:var(--spacing24);
   
-
 }
 
 .banner_text{
+  width: 60%;
   font-size: var(--heading5);
   font-weight: 400;
-  line-height: var(--heading4);
+  color:var( --black-text);
+  line-height: 2.5rem;
   text-align:right;
+}
+
+.banner_nombreWeb{
+  font-family: var(--nombre-font);
+  font-weight: 500;
 }
 
