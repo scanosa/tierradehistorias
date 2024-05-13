@@ -17,13 +17,14 @@
     /*TIPOGRAFÍAS*/
     --base-font: "Nunito", sans-serif;
     --headings-font: "Fredoka", sans-serif;
+    --nombre-font: "TdH", sans-serif;
    
     /*FONT-SIZES*/
-    --heading1: 3.812rem; /*61px*/
-    --heading2: 3.062rem; /*49px*/
-    --heading3: 2.438rem; /*39px*/
-    --heading4: 1.938rem; /*31px*/
-    --heading5: 1.562rem; /*25px*/
+    --heading1: 3.75rem; /*60px*/
+    --heading2: 3.125rem; /*50px*/
+    --heading3: 2.5rem; /*40px*/
+    --heading4: 1.875; /*30px*/
+    --heading5: 1.5rem; /*24px*/
     --heading6: 1.250rem; /*20px*/
 
     --text-large: 1rem;/*16px*/
@@ -32,4 +33,6 @@
     --text-small: 0.625rem; /*10px*/
 
     /*ESPACIOS*/
+    --spacing48: 3rem; /*48px*/
+    --spacing24: 1.4rem; /*24px*/
 }
