@@ -6,23 +6,23 @@
 @import url(./variables.css);
 @import url(./faq.css);
 
+
 /*ESTILOS HEADER Y FOOTER*/
-header {
-  margin-bottom: 3rem;
-}
-.header > img {
-  position: absolute;
-  z-index: 0;
+
+.header_container{
+  background-color: var(--aqua);
+
 }
 
 .header_navbar {
-  padding: 20px 40px 20px 40px;
+  padding: 20px 40px 0px 40px;
   position: relative;
   top: 0;
-  z-index: 0;
+  z-index: 10000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .navbar_logo img {
@@ -130,3 +130,39 @@ footer {
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
+
+
+.banner img{
+  width: 100%;
+  margin-top:-5rem;
+  position: absolute;
+ }
+
+.banner_content{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position:relative;
+  z-index:1;
+  }
+  
+
+.banner_title{
+  font-family: var(--headings-font);
+  font-size:var(--heading2);
+  font-weight: 700;
+  line-height: var(--heading1);
+  text-align: right;
+  
+
+}
+
+.banner_text{
+  font-size: var(--heading5);
+  font-weight: 400;
+  line-height: var(--heading4);
+  text-align:right;
+}
+
