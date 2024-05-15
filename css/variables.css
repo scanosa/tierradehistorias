@@ -23,7 +23,7 @@
     --heading1: 3.75rem; /*60px*/
     --heading2: 3.125rem; /*50px*/
     --heading3: 2.5rem; /*40px*/
-    --heading4: 1.875; /*30px*/
+    --heading4: 1.875rem; /*30px*/
     --heading5: 1.5rem; /*24px*/
     --heading6: 1.250rem; /*20px*/
 
@@ -33,6 +33,10 @@
     --text-small: 0.625rem; /*10px*/
 
     /*ESPACIOS*/
+    --spacing96:6rem;
+    --spacing64:4rem;
     --spacing48: 3rem; /*48px*/
+    --spacing40:2.5rem;/*40px*/
     --spacing24: 1.4rem; /*24px*/
+    --spacing10: 0.625rem; /*10px*/
 }

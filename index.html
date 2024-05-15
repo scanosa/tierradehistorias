@@ -11,12 +11,14 @@
   <body>
     <!-- el  header de la home es diferente porque tiene otro fondo -->
     <header class="header">
-       <div class="header_container">
-         
+      <div class="header_container">
         <nav class="header_navbar container">
           <picture class="navbar_logo">
             <a href="./index.html">
-              <img src="./img/logo/logo01a.png" alt="logo Tierra de Historias" />
+              <img
+                src="./img/logo/logo01a.png"
+                alt="logo Tierra de Historias"
+              />
             </a>
           </picture>
           <ul class="navbar_links">
@@ -26,89 +28,189 @@
             </li>
             <li><a href="./pages/faq.html">Preguntas Frecuentes</a></li>
           </ul>
-          <a href="./pages/contacto.html" class="navbar_button"> Contactanos </a>
-               </nav>
-       </div>
+          <a href="./pages/contacto.html" class="navbar_button">
+            Contactanos
+          </a>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section class="banner">
-        <img src="./img/misc/banner_cropped.png" alt="">
+        <img src="./img/misc/banner_cropped.png" alt="" />
         <div class="banner_content container">
           <div class="banner_innerContent">
-            <h1 class="banner_title">¡Explorá un mundo lleno de historias y aventuras!</h1>
+            <h1 class="banner_title">
+              ¡Explorá un mundo lleno de historias y aventuras!
+            </h1>
             <p class="banner_text">
-                Descubrí la magia de la lectura con <span class="banner_nombreWeb">Tierra de Historias</span>, donde los sueños se vuelven realidad
-                y la aventura te espera en cada página y en cada palabra. ¡Preparate
-                para desatar tu imaginación!
+              Descubrí la magia de la lectura con
+              <span class="banner_nombreWeb">Tierra de Historias</span>, donde
+              los sueños se vuelven realidad y la aventura te espera en cada
+              página y en cada palabra. ¡Preparate para desatar tu imaginación!
             </p>
           </div>
-        </div>  
-      
-      </section>
-        <!-- <br />
-        <h2>Conocé nuestra biblioteca</h2>
-        <div class="cajabuscar">
-          <form method="get" id="buscarform">
-            <fieldset>
-              <input type="text" id="s" value="" placeholder="Buscar" />
-              <input class="button" type="submit" value="" />
-              <i class="search"></i>
-            </fieldset>
-          </form>
         </div>
-        <br />
-        <h2>Libros más leídos</h2>
-        <ul>
-          <li>
-            <img src="./img/portadas libros/una amistad imposible.jpg" />
-          </li>
-          <li>
-            <img
-              src="./img/portadas libros/un elefante ocupa mucho espacio.jpg"
-            />
-          </li>
-          <li>
-            <img src="./img/portadas libros/un anio de cumpleaños.jpg" />
-          </li>
-        </ul>
-        <br />
-        <h2>Audiolibros más escuchados</h2>
-        <ul>
-          <li>
-            <img
-              src="./img/portadas libros/Los pavos reales y Pomposo el cuervo.jpg"
-            />
-          </li>
-          <li>
-            <img src="./img/portadas libros/Samara y el ruiseño.jpg" />
-          </li>
-          <li><img src="./img/portadas libros/pulgoso.jpg" /></li>
-        </ul>
-        <br />
-        <section id="contáctanos">
-          <h2>Contáctanos</h2>
-          <p>
-            Nos encantaría escuchar tus sugerencias y comentarios. Por favor,
-            completá el formulario o envíanos un email a
-            <a href="mailto:blablabla@mail.com">blablabla@mail.com</a>
-          </p>
-          <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" /><br /><br />
-            <label for="email">Email:</label>
-            <input type="email" id="Email" name="Email" /><br /><br />
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje"></textarea><br /><br />
-            <input type="submit" value="Enviar" />
+      </section>
+
+      <section class="conoceBiblio">
+        <div class="conoceBiblioContent container">
+          <h2 class="conoceTitulo">Conocé nuestra biblioteca</h2>
+          <form
+            class="formBusqueda"
+            type="searchForm"
+            action="./pages/biblioteca.html"
+            method="get"
+          >
+            <div class="buscarContainer">
+              <input
+                type="text"
+                id="searchInput"
+                name="q"
+                placeholder="Buscar..."
+              />
+              <span class="iconamoon--search-light"></span>
+            </div>
           </form>
-        </section>
-     
-    </main>-->
+          <p class="conoceBajada">
+            ¡Cientos de libros y audiolibros listos para descargar te están
+            esperando!
+          </p>
+        </div>
+
+        <div class="librosSlider container">
+          <h2 class="librosSliderTitulo">Libros más leídos</h2>
+          <div class="slider">
+            <div class="slider-container">
+              <div class="slide">
+                <img
+                  src="./img/portadas libros/una amistad imposible.jpg"
+                  alt="Tapa del libro 1"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/portadas libros/un elefante ocupa mucho espacio.jpg"
+                  alt="Tapa del libro 2"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/portadas libros/un anio de cumpleaños.jpg"
+                  alt="Tapa del libro 3"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/portadas libros/ruidos monstruosos.jpg"
+                  alt="Tapa del libro 3"
+                />
+              </div><!-- 
+              <div class="slide">
+                <img
+                  src="./img/portadas libros/diminuto y el campamento zombi.jpg"
+                  alt="Tapa del libro 3"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/portadas libros/diminuto y el gol de oro.jpg"
+                  alt="Tapa del libro 3"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/portadas libros/Dioses y héroes de la mitologia griega.jpg"
+                  alt="Tapa del libro 3"
+                />
+              </div> -->
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </div>
+
+        <div class="librosSlider container">
+          <h2 class="librosSliderTitulo">Audiolibros más escuchados</h2>
+          <div class="slider">
+            <div class="slider-container">
+              <div class="slide">
+                <img
+                  src="./img/portadas libros/Seis sabios ciegos y un elefante.jpg"
+                  alt="Tapa del libro 1"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/portadas libros/Samara y el ruiseño.jpg"
+                  alt="Tapa del libro 2"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/portadas libros/Los pavos reales y Pomposo el cuervo.jpg"
+                  alt="Tapa del libro 3"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="./img/portadas libros/pulgoso.jpg"
+                  alt="Tapa del libro 3"
+                />
+              </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </div>
+
+        <a href="./pages/biblioteca.html" class="botonNaranja">
+          Explorá la Biblioteca
+        </a>
+      </section>
+
+      <section class="contactanos">
+        <div class="contactanosContent container">
+          <h2 class="contactanosTitulo">Contactanos</h2>
+          <p class="contactanosBajada">
+            Nos encantaría escuchar tus sugerencias y comentarios.
+          </p>
+          <p class="contactanosBajada">
+          Por favor, completá el formulario o envianos un email a tierradehistorias@mail.com
+          </p>
+          <div class="contactanosForm">
+            <form
+              action="mailto:cintia.huddle@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="contactanosCampos">
+                <div class="contactanosNomEmail">
+                  <div class="contactanosNombre">
+                    <label for="fnombre">Nombre</label>
+                    <input type="text" name="fnombre" id="fnombre" />
+                  </div>
+                  <div class="contactanosEmail">
+                    <label for="femail">E-mail</label>
+                    <input type="text" name="femail" id="femail" />
+                  </div>
+                </div>
+                <div class="contactanosMensaje">
+                  <label for="fmensaje">Mensaje</label>
+                  <textarea name="mensaje" rows="10" id="fmensaje"></textarea>
+                </div>
+              </div>
+              <div class="contactanosEnviar">
+                <input type="submit" value="Enviar" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
-
-      <div class="footer_container">
+      <div class="footer_container container">
         <picture class="footer_logo">
           <a href="./index.html">
             <img
