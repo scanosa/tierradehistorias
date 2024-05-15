@@ -397,6 +397,13 @@ footer {
   border: 1px solid #cdcdcd;
 }
 
+.contactanosCampos #fnombre,
+.contactanosCampos #femail,
+.contactanosCampos #fmensaje{
+  font-family: var(--base-font);
+  font-size: var(--text-large);
+}
+
 .contactanosNomEmail {
   display: flex;
   justify-content: space-between;
