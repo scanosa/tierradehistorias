@@ -13,13 +13,12 @@
   src: url(../img/KGBeStillAndKnow.ttf);
 }
 
-
-.container{
-  max-width:1200px;
- }
+.container {
+  max-width: 1200px;
+}
 /*ESTILOS HEADER Y FOOTER*/
 
-.header_container{
+.header_container {
   background-color: var(--aqua);
 }
 
@@ -31,8 +30,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin:0 auto;
-  
+  margin: 0 auto;
 }
 
 .navbar_logo img {
@@ -71,8 +69,8 @@
   color: white;
 }
 
-.navbar_fondo{
-  position:absolute;
+.navbar_fondo {
+  position: absolute;
 }
 
 footer {
@@ -82,12 +80,12 @@ footer {
 .footer {
   background-color: var(--aqua);
   padding: 30px 40px 30px 40px;
- }
+}
 
 .footer_container {
   display: flex;
   justify-content: space-between;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .footer_logo img {
@@ -146,91 +144,84 @@ footer {
   mask-size: 100% 100%;
 }
 
-
-
-.banner img{
+.banner img {
   width: 100%;
-  margin-top:-5rem;
+  margin-top: -5rem;
   position: absolute;
-  z-index:0;
- }
+  z-index: 0;
+}
 
-.banner_content{
+.banner_content {
   display: flex;
   justify-content: flex-end;
-  margin:0 auto;
- }
+  margin: 0 auto;
+}
 
-.banner_innerContent{
+.banner_innerContent {
   width: 60%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  position:relative;
-  z-index:1;
-  }
+  position: relative;
+  z-index: 1;
+}
 
-
-
-.banner_title{
- 
+.banner_title {
   font-family: var(--headings-font);
-  font-size:var(--heading2);
+  font-size: var(--heading2);
   font-weight: 700;
-  color:var( --black-text);
+  color: var(--black-text);
   line-height: var(--heading1);
   text-align: right;
   margin-bottom: var(--spacing24);
-  margin-top:var(--spacing24);
-  
+  margin-top: var(--spacing24);
 }
 
-.banner_text{
+.banner_text {
   width: 60%;
   font-size: var(--heading5);
   font-weight: 400;
-  color:var( --black-text);
+  color: var(--black-text);
   line-height: 2.5rem;
-  text-align:right;
+  text-align: right;
 }
 
-.banner_nombreWeb{
+.banner_nombreWeb {
   font-family: var(--nombre-font);
   font-weight: 500;
 }
 
-
-
-.conoceBiblio{
+.conoceBiblio {
   background-color: var(--light-lemon);
   padding-top: 205px;
-  padding-bottom:var(--spacing64);
- 
- }
+  padding-bottom: var(--spacing64);
+}
 
-.conoceBiblioContent{
-  display:flex;
-  flex-direction:column;
+.conoceBiblioContent {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-left:auto;
-  margin-right:auto;
- }
+  margin-left: auto;
+  margin-right: auto;
+}
 
- .conoceTitulo{
-  text-align:center;
+.conoceTitulo {
+  text-align: center;
   font-family: var(--headings-font);
   font-weight: 600;
   font-size: var(--heading2);
-  margin-bottom:var(--spacing40);
-  margin-top:var(--spacing24);
- }
+  margin-bottom: var(--spacing40);
+  margin-top: var(--spacing24);
+}
 
-.buscarContainer{
+.buscarContainer {
   position: relative;
 }
 
 .buscarContainer input[type="text"] {
-  padding-right: var(--spacing40) /* Ajusta el espacio a la derecha para el icono */
+  padding-right: var(
+    --spacing40
+  ); /* Ajusta el espacio a la derecha para el icono */
 }
 
 .buscarContainer .iconamoon--search-light {
@@ -241,12 +232,12 @@ footer {
   cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
 }
 
- .formBusqueda input{
+.formBusqueda input {
   font-family: var(--base-font);
-  font-size:var(--text-large);
+  font-size: var(--text-large);
   border: 1px solid #cdcdcd;
   border-radius: 1rem;
-  padding:var(--spacing10);
+  padding: var(--spacing10);
   width: 50vw;
 }
 
@@ -259,32 +250,31 @@ footer {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23cdcdcd' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314'/%3E%3C/svg%3E");
 }
 
- .conoceBajada{
-  text-align:center;
-  font-size:var(--heading5);
-  margin-top:var(--spacing40);
-  margin-bottom:var(--spacing64);
- }
+.conoceBajada {
+  text-align: center;
+  font-size: var(--heading5);
+  margin-top: var(--spacing40);
+  margin-bottom: var(--spacing64);
+}
 
-
-.librosSlider{
+.librosSlider {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom:var(--spacing64)
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--spacing64);
 }
 
-.librosSliderTitulo{
+.librosSliderTitulo {
   font-family: var(--headings-font);
-  font-size:2rem;
+  font-size: 2rem;
   font-weight: 600;
-  align-self:flex-start;
-  margin-bottom:var(--spacing48);
+  align-self: flex-start;
+  margin-bottom: var(--spacing48);
 }
 
- .slider {
+.slider {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -294,9 +284,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:2rem;
+  gap: 2rem;
   transition: transform 0.5s ease;
-
 }
 
 .slide {
@@ -329,32 +318,38 @@ footer {
   font-size: var(--heading3);
 }
 
-.botonNaranja{
-  display:block;
-  width:fit-content;
-  text-align:center;
-  color:var(--black-text);
+.botonNaranja {
+  display: block;
+  width: fit-content;
+  text-align: center;
+  color: var(--black-text);
   font-size: var(--heading5);
   font-weight: 600;
   background-color: var(--orange);
   padding: 0.625rem 1.875rem 0.625rem 1.875rem;
   border-radius: 15px;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
   transition: background-color 0.3s ease;
 }
 
-.botonNaranja:hover{
-  background-color:var(--red);
+.botonNaranja:hover {
+  background-color: var(--red);
 }
 
-.contactanos{
-    background-color: var(--light-red);
-    padding-top: var(--spacing64);
-    padding-bottom:var(--spacing64);
+.contactanos {
+  background-color: var(--light-red);
+  padding-top: var(--spacing64);
+  padding-bottom: var(--spacing64);
 }
 
-.contactanosContent{
+.contactanosPage {
+  background-color: var(--ultralight-red);
+  padding-top: var(--spacing64);
+  padding-bottom: var(--spacing64);
+}
+
+.contactanosContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -363,91 +358,97 @@ footer {
   margin-right: auto;
 }
 
-.contactanosTitulo{
-  text-align:center;
+.contactanosTitulo {
+  text-align: center;
   font-family: var(--headings-font);
   font-weight: 600;
   font-size: var(--heading2);
-  margin-bottom:var(--spacing40);
+  margin-bottom: var(--spacing40);
 }
 
-.contactanosBajada{
-  text-align:center;
-  font-size:var(--heading5);
-
+.contactanosBajada {
+  text-align: center;
+  font-size: var(--heading5);
 }
 
-.contactanosCampos{
-  margin-top:var(--spacing40);
+.contactanosCampos {
+  margin-top: var(--spacing40);
   display: flex;
-  flex-direction:column;
-  gap:2rem;
+  flex-direction: column;
+  gap: 2rem;
   width: 70%;
- 
 }
 
-.contactanosCampos label{
+.contactanosCampos label {
   font-size: var(--heading6);
-
 }
 
-.contactanosCampos input{
-  border:none;
+.contactanosCampos input {
+  border: none;
   border-radius: 0.5rem;
-  padding:var(--spacing10);
+  padding: var(--spacing10);
   border: 1px solid #cdcdcd;
 }
 
-.contactanosCampos textarea{
-  border:none;
-  border-radius:0.5rem;
-  padding:var(--spacing10);
+.contactanosCampos textarea {
+  border: none;
+  border-radius: 0.5rem;
+  padding: var(--spacing10);
   border: 1px solid #cdcdcd;
 }
 
-.contactanosNomEmail{
+.contactanosNomEmail {
   display: flex;
   justify-content: space-between;
-  gap:3rem;
-
+  gap: 3rem;
 }
 
-.contactanosNombre, .contactanosEmail{
+.contactanosNombre,
+.contactanosEmail {
   display: flex;
-  flex-direction:column;
-  width:50%;
-  
+  flex-direction: column;
+  width: 50%;
 }
-.contactanosMensaje{
+.contactanosMensaje {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 }
 
-.contactanosForm{
+.contactanosForm {
   width: 100%;
 }
 
-.contactanosForm form{
+.contactanosForm form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left:auto;
-  margin-right:auto;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contactanosEnviar input{
-
-  width:fit-content;
-  text-align:center;
-  color:white;
+.contactanosEnviar input {
+  width: fit-content;
+  text-align: center;
+  color: white;
   background-color: var(--red);
+  font-family: var(--base-font);
   font-size: var(--heading6);
   font-weight: 600;
-  border:none;
+  border: none;
   padding: 0.625rem 1.875rem 0.625rem 1.875rem;
   border-radius: 15px;
-  margin-top:var(--spacing48);
+  margin-top: var(--spacing48);
+}
 
- 
- }
+.contactanosEnviar input:hover {
+  background-color: var(--dark-red);
+  cursor: pointer;
+}
+
+.contactanos_imagen img {
+  width: 15vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
