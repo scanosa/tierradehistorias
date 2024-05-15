@@ -17,7 +17,7 @@
         alt="fondo del header nube azul"
         class="navbar_fondo"
       />
-      <nav class="header_navbar">
+      <nav class="header_navbar container">
         <picture class="navbar_logo">
           <a href="../index.html">
             <img src="../img/logo/logo01a.png" alt="logo Tierra de Historias" />
@@ -31,46 +31,62 @@
           </li>
           <li><a href="./faq.html">Preguntas Frecuentes</a></li>
         </ul>
-        
-        <a href="../pages/contacto.html" class="navbar_button">
-        Contactanos
-        </a>
-     
+
+        <a href="../pages/contacto.html" class="navbar_button"> Contactanos </a>
       </nav>
     </header>
 
     <main>
-
-      <h2>Contactanos</h2>
-      <p>Nos encantaría escuchar tus sugerencias y comentarios. Por favor, completá el formulario o envianos un email a tierradehistorias@mail.com </p>
-
-      <div>
-        <form action="mailto:cintia.huddle@gmail.com" method="post" enctype="text/plain">
-            <div>
-                <label for="fnombre">Nombre</label>
-                <input type="text" name="fnombre" id="fnombre">
-        
-                <label for="femail">E-mail</label>
-                <input type="text" name="femail" id="femail">
-            </div>
-        
-          <div>
-            <label for="fmensaje">Mensaje</label>
-            <textarea name="mensaje" rows="10" id="fmensaje"></textarea>
+      <section class="contactanosPage">
+        <div class="contactanosContent container">
+          <h2 class="contactanosTitulo">Contactanos</h2>
+          <picture class="contactanos_imagen">
+            <img
+              src="../img/animales/Animales_Puma1.png"
+              alt=""
+            />
+          </picture>
+          <p class="contactanosBajada">
+            Nos encantaría escuchar tus sugerencias y comentarios.
+          </p>
+          <p class="contactanosBajada">
+            Por favor, completá el formulario o envianos un email a
+            tierradehistorias@mail.com
+          </p>
+          <div class="contactanosForm">
+            <form
+              action=""
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="contactanosCampos">
+                <div class="contactanosNomEmail">
+                  <div class="contactanosNombre">
+                    <label for="fnombre">Nombre</label>
+                    <input type="text" name="fnombre" id="fnombre" required="required"/>
+                  </div>
+                  <div class="contactanosEmail">
+                    <label for="femail">E-mail</label>
+                    <input type="text" name="femail" id="femail" required="required"/>
+                  </div>
+                </div>
+                <div class="contactanosMensaje">
+                  <label for="fmensaje">Mensaje</label>
+                  <textarea name="mensaje" rows="10" id="fmensaje" required="required"></textarea>
+                </div>
+              </div>
+              <div class="contactanosEnviar">
+                <input type="submit" value="Enviar"/>
+              </div>
+            </form>
           </div>
-          <div>
-            <input type="submit" value="Enviar"/>
-          </div>
-        
-        </form>
-      </div>
-
+        </div>
+      </section>
     </main>
-
 
     <footer class="footer">
       <!--Cintia-->
-      <div class="footer_container">
+      <div class="footer_container container">
         <picture class="footer_logo">
           <a href="./index.html">
             <img
@@ -107,4 +123,3 @@
     <script src="../js/index.js"></script>
   </body>
 </html>
-
