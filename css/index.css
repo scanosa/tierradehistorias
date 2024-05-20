@@ -459,3 +459,262 @@ footer {
   margin-right: auto;
   margin-bottom: 2rem;
 }
+
+
+/*Biblioteca.html*/
+.exploraBiblio {
+ 
+  margin-top:var(--spacing64);
+  margin-left:auto;
+  margin-right:auto;
+  
+}
+
+.exploraTitulo{
+  text-align: center;
+  font-family: var(--headings-font);
+  font-weight: 600;
+  font-size: var(--heading2);
+  margin-top: var(--spacing24);
+}
+
+.exploraBajada{
+  text-align: center;
+  font-size: var(--heading5);
+  margin-top: var(--spacing24);
+  margin-bottom: var(--spacing40);
+}
+
+.imgytitulo{
+  display: flex;
+  gap:2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgytitulo img{
+  width:10vw;
+}
+
+.biblioFilters{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  gap:0.5rem;
+  margin-top: var(--spacing24);
+  margin-bottom: var(--spacing40);
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.filtersSelects{
+  display: flex;
+  justify-content: space-between;
+  gap:2rem;
+}
+
+.filterSelect{
+  font-family: var(--base-font);
+  font-size: var(--text-medium);
+ 
+  border: 1px solid #cdcdcd;
+  border-radius: 1rem;
+  padding: var(--spacing8) var(--spacing10);
+}
+
+.filterSelect option{
+  display:block;
+  padding:var(--spacing8);
+}
+
+
+.filtersChecks{
+  display: flex;
+  justify-content: space-between;
+  gap:2rem;
+}
+
+.formato, .nivelLectura{
+  display: flex;
+  align-items: baseline;
+
+}
+
+.formato p, 
+.nivelLecturaTitulo{
+  font-family: var(--base-font);
+  font-size: var(--text-large);
+  font-weight: 600;
+  padding: var(--spacing10);
+}
+
+.formatoChecks label, .nivelLecturaChecks label 
+{
+  font-size: var(--text-medium);
+  padding: 0.4rem;
+}
+
+.formatoChecks>div{
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+
+.biblioteca{
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:var(--spacing48);
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding:var(--spacing24);
+  width:70vw;
+}
+
+
+
+.bibliotecaGrilla{
+  display: flex;
+  flex-wrap:wrap;
+  gap:2vw;
+  justify-content:center;
+  align-items:flex-start;
+  margin-bottom:var(--spacing40);
+
+}
+
+.bibliotecaGrilla picture {
+  width:10vw;
+  
+}
+
+.bibliotecaPaginado {
+  display: inline-block;
+}
+
+.bibliotecaPaginado a {
+  color:var(--black-text);
+  float: left;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.bibliotecaPaginado a.activePage {
+  background-color:var(--red);
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+
+.libro{
+  margin-top: var(--spacing96);
+  margin-bottom: var(--spacing64);
+  margin-left:auto;
+  margin-right:auto;
+  width:70vw;
+  display: flex;
+  align-items:flex-start;
+  gap:5%;
+}
+
+.portadaLibro{
+  width: 30%;
+}
+
+.portadaLibro img{
+  
+  width: 100%;
+  height: auto;
+
+ 
+}
+
+.detalleLibro{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  width:70%;
+}
+
+.datos_titulo{
+  font-family: var(--headings-font);
+  font-size:var(--heading5);
+}
+
+.datos_autor{
+  font-size:var(--text-large);
+  margin-bottom:var(--spacing16);
+}
+
+.datos_descripcion{
+  font-size:var(--text-medium);
+  margin-bottom:var(--spacing16);
+}
+
+.atributos{
+  margin-bottom:var(--spacing16);
+}
+
+.atributos p{
+  font-size:var(--text-medium);
+}
+
+.atributos span{
+  font-weight: 600;
+}
+
+.acciones{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:4%;
+}
+
+.botonDescargar{
+  padding: var(--spacing8) var(--spacing16);
+
+  width: auto;
+  background-color: var(--orange);
+  border-radius:1rem;
+  font-size:var(--text-large);
+  font-weight: 600;
+}
+
+.botonDescargar:hover{
+  background-color: var(--red);
+  cursor: pointer;
+}
+
+.botonCompartir{
+  padding: var(--spacing10) var(--spacing10);
+  height:100%;
+  width: auto;
+  background-color: var(--lemon);
+  border-radius:1rem;
+
+}
+
+.botonCompartir:hover{
+  background-color: var(--dark-lemon);
+}
+
+.material-symbols--share {
+  display: block;
+  width:1em;
+  height: 1em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23171717' d='M18 22q-1.25 0-2.125-.875T15 19q0-.175.025-.363t.075-.337l-7.05-4.1q-.425.375-.95.588T6 15q-1.25 0-2.125-.875T3 12t.875-2.125T6 9q.575 0 1.1.213t.95.587l7.05-4.1q-.05-.15-.075-.337T15 5q0-1.25.875-2.125T18 2t2.125.875T21 5t-.875 2.125T18 8q-.575 0-1.1-.212t-.95-.588L8.9 11.3q.05.15.075.338T9 12t-.025.363t-.075.337l7.05 4.1q.425-.375.95-.587T18 16q1.25 0 2.125.875T21 19t-.875 2.125T18 22'/%3E%3C/svg%3E");
+}
+
+.recursos_imagen {
+  width: 10vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top:4rem;
+}

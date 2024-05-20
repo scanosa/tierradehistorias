@@ -64,7 +64,7 @@ body {
   margin: auto;
 }
 
-.preguntas_titulo {
+.preguntas_titulo{
   text-align: center;
   font-family: var(--headings-font);
   font-weight: 600;

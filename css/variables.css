@@ -12,6 +12,7 @@
   
   --black-text: #171717;
   --dark-red: #d33048;
+  --dark-lemon: #dfe666;
 
   /*TIPOGRAFÍAS*/
   --base-font: "Nunito", sans-serif;
@@ -37,5 +38,7 @@
   --spacing48: 3rem; /*48px*/
   --spacing40: 2.5rem; /*40px*/
   --spacing24: 1.4rem; /*24px*/
+  --spacing16: 1rem; /*16px*/
   --spacing10: 0.625rem; /*10px*/
+  --spacing8:0.5rem; /*8px*/
 }

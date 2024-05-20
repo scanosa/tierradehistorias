@@ -1,138 +1,235 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
 
-    <title>Tierra de Historias | Biblioteca</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
 
-  <body>
-    <header class="header">
-      <!--Cintia-->
-      <img
-        src="../img/header y footer/header_nube_completo-07.png"
-        alt="fondo del header nube azul"
-        class="navbar_fondo"
-      />
-      <nav class="header_navbar container">
-        <picture class="navbar_logo">
-          <a href="../index.html">
-            <img src="../img/logo/logo01a.png" alt="logo Tierra de Historias" />
-          </a>
-        </picture>
+  <title>Tierra de Historias | Biblioteca</title>
+</head>
 
-        <ul class="navbar_links">
+<body>
+  <header class="header">
+    <!--Cintia-->
+    <img src="../img/header y footer/header_nube_completo-07.png" alt="fondo del header nube azul"
+      class="navbar_fondo" />
+    <nav class="header_navbar container">
+      <picture class="navbar_logo">
+        <a href="../index.html">
+          <img src="../img/logo/logo01a.png" alt="logo Tierra de Historias" />
+        </a>
+      </picture>
+
+      <ul class="navbar_links">
+        <li><a href="./biblioteca.html">Biblioteca</a></li>
+        <li>
+          <a href="./recursosdidacticos.html">Recursos Didácticos</a>
+        </li>
+        <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+      </ul>
+
+      <a href="../pages/contacto.html" class="navbar_button"> Contactanos </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="exploraBiblio container">
+      <div class="conoceBiblioContent container">
+        <h2 class="exploraTitulo">Explorá nuestra biblioteca</h2>
+        <p class="exploraBajada">
+          ¡Cientos de libros y audiolibros listos para descargar te están
+          esperando!
+        </p>
+        <div class="imgytitulo">
+          <img src="../img/animales/Animales_Libros.png" alt="">
+          <div>
+            <form class="formBusqueda" type="searchForm" action="./pages/biblioteca.html" method="get">
+              <div class="buscarContainer">
+                <input type="text" id="searchInput" name="q" placeholder="Buscar..." />
+                <span class="iconamoon--search-light"></span>
+              </div>
+            </form>
+          </div>
+          <img src="../img/animales/Animales_Tablet.png" alt="">
+        </div>
+        
+      </div>
+    </section>
+
+      <!-- Filtros -->
+      <section class="biblioFilters container">
+        <div class="filtersSelects">
+          <select name="generos" class="filterSelect">
+            <option value="gTodos">Todos los Géneros</option>
+            <option value="gAdivinanzas">Adivinanzas</option>
+            <option value="gCuentos">Cuento</option>
+            <option value="gHistorietas">Historieta</option>
+            <option value="gFabulas">Fábula</option>
+            <option value="gLeyenda">Leyenda</option>
+            <option value="gMito">Mito</option>
+            <option value="gNovela">Novela</option>
+            <option value="gPoesia">Poesía</option>
+            <option value="gTeatro">Teatro</option>
+            <option value="gVarios">Varios</option>
+          </select>
+          <select name="tematicas" class="filterSelect">
+            <option value="tTodos">Todas las temáticas</option>
+            <option value="tAmistad">Amistad</option>
+            <option value="tAmor">Amor</option>
+            <option value="tAnimales">Animales</option>
+            <option value="tAventura">Aventura</option>
+            <option value="tCienciaFiccion">Ciencia Ficción</option>
+            <option value="tClasico">Clásico</option>
+            <option value="tComunicacion">Comunicación</option>
+            <option value="tDeporte">Deporte</option>
+            <option value="tFamilia">Familia</option>
+            <option value="tFantasia">Fantasia</option>
+            <option value="tHumor">Humor</option>
+            <option value="tPolicial">Policial</option>
+            <option value="tTerror">Terror</option>
+            <option value="tValores">Valores</option>
+            <option value="tOtros">Otros</option>
+          </select>
+          <select name="idiomas" class="filterSelect">
+            <option value="iTodos">Todos los Idiomas</option>
+            <option value="iEspanol">Español</option>
+            <option value="iIngles">Inglés</option>
+          </select>
+        </div>
+        <div class="filtersChecks">
+          <div class="formato">
+            <p class="formatoTitulo">Formato:</p>
+            <div class="formatoChecks">
+                <input type="checkbox" id="fAudio" name="fAudio">
+                <label for="fAudio">Audio</label>
+              
+                <input type="checkbox" id="fTexto" name="fTexto">
+                <label for="fTexto">Texto</label>
+              
+            </div>
+          </div>
+          <div class="nivelLectura">
+            <p class="nivelLecturaTitulo">Nivel de Lectura:</p>
+            <div class="nivelLecturaChecks">
+              <input type="checkbox" id="nivel03" name="nivel03">
+              <label for="nivel03">0 a 3 años</label>
+              <input type="checkbox" id="nivel36" name="nivel36">
+              <label for="nivel36">3 a 6 años</label>
+              <input type="checkbox" id="nivel68" name="nivel68">
+              <label for="nivel68">6 a 8 años</label>
+              <input type="checkbox" id="nivel810" name="nivel810">
+              <label for="nivel810">8 a 10 años</label>
+              <input type="checkbox" id="nivel10" name="nivel10">
+              <label for="nivel10">+10 años</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="biblioteca container">
+        <div class="bibliotecaGrilla">
+          <picture class="libroPortada">
+            <a href="./detallelibro.html"><img src="../img/portadas libros/diminuto y el gol de oro.jpg" alt=""></a>
+          </picture>
+          <picture class="libroPortada">
+            <img src="../img/portadas libros/dada sueña.jpeg" alt="">
+          </picture>
+          <picture class="libroPortada">
+            <img src="../img/portadas libros/diminuto y el campamento zombi.jpg" alt="">
+          </picture>
+          <picture class="libroPortada">
+            <img src="../img/portadas libros/Dioses y héroes de la mitologia griega.jpg" alt="">
+          </picture>
+          <picture class="libroPortada">
+            <img src="../img/portadas libros/donde esta mi tesoro.jpg" alt="">
+          </picture>
+          <picture class="libroPortada">
+            <img src="../img/portadas libros/El raton Garcia.jpg" alt="">
+          </picture>
+          <picture class="libroPortada">
+            <img src="../img/portadas libros/La banda del siglo.jpg" alt="">
+          </picture>
+          <picture class=" libroPortada">
+            <img src="../img/portadas libros/Los pavos reales y Pomposo el cuervo.jpg" alt="">
+          </picture>
+          <picture class="libroPortada">
+            <img src="../img/portadas libros/Poesia para chicos.jpg" alt="">
+          </picture>
+          <picture class="libroPortada">
+            <img src="../img/portadas libros/pulgoso.jpg" alt="">
+          </picture>
+          <picture class="libroPortada">
+            <img src="../img/portadas libros/ruidos monstruosos.jpg" alt="">
+          </picture>
+          <picture class="libroPortada">
+            <img src="../img/portadas libros/Samara y el ruiseño.jpg" alt="">
+          </picture>
+          <picture class="libroPortada">
+            <img src="../img/portadas libros/Seis sabios ciegos y un elefante.jpg" alt="">
+          </picture>
+          <picture class="libroPortada">
+            <img src="../img/portadas libros/un anio de cumpleaños.jpg" alt="">
+          </picture>
+          <picture class="libroPortada">
+            <img src="../img/portadas libros/un elefante ocupa mucho espacio.jpg" alt="">
+          </picture>
+          <picture class="libroPortada">
+            <img src="../img/portadas libros/una amistad imposible.jpg" alt="">
+          </picture>
+        </div>
+        <div class="bibliotecaPaginado">
+            <a href="#">&#10094;</a>
+            <a href="#" class="activePage" >1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&#10095;</a>
+         </div>
+      </section>
+
+
+
+  </main>
+
+  <footer class="footer">
+    <!--Cintia-->
+    <div class="footer_container container">
+      <picture class="footer_logo">
+        <a href="./index.html">
+          <img src="../img/animales/Animales_Carpincho4.png" alt="logo Tierra de Historias" />
+        </a>
+      </picture>
+      <div class="footer_menu">
+        <p>Menú</p>
+        <ul class="footer_links">
           <li><a href="./biblioteca.html">Biblioteca</a></li>
           <li>
-            <a href="./recursosdidacticos.html">Recursos Didácticos</a>
+            <a href="./recursosdidacticos.html">Recursos didácticos</a>
           </li>
           <li><a href="./faq.html">Preguntas Frecuentes</a></li>
         </ul>
-
-        <a href="../pages/contacto.html" class="navbar_button"> Contactanos </a>
-      </nav>
-    </header>
-
-    <main>
-      <h1>Explorá nuestra biblioteca</h1>
-
-      <p>
-        ¡Enfocá tus criterios y accedélos; listos para descargar o editar según
-        capturaste!
-      </p>
-
-      <!-- Filtros -->
-      <section class="filters">
-        <select name="genres" class="filter">
-          <option value="all">Todos los Géneros</option>
-          <!-- Otras opciones aquí -->
-        </select>
-        <select name="formats" class="filter">
-          <option value="all">Todos los Formatos</option>
-          <!-- Otras opciones aquí -->
-        </select>
-        <select name="moments" class="filter">
-          <option value="all">Todos los Momentos</option>
-          <!-- Otras opciones aquí -->
-        </select>
-        <!-- Otros filtros aquí -->
-      </section>
-
-      <!-- Cuadrícula de libros -->
-      <section class="book-grid">
-        <div class="grid-container">
-          <div class="grid-item">1</div>
-          <div class="grid-item">
-            <img
-              src="../img/imagenLibros/A Berta le gusta amasar a su gato.jpg"
-              alt="imagenBox2"
-              class="fotoLibro2"
-            />
-          </div>
-          <div class="grid-item">3</div>
-          <div class="grid-item">4</div>
-          <div class="grid-item">5</div>
-          <div class="grid-item">6</div>
-          <div class="grid-item">7</div>
-          <div class="grid-item">8</div>
-          <div class="grid-item">9</div>
-          <div class="grid-item">10</div>
-          <div class="grid-item">11</div>
-          <div class="grid-item">12</div>
-          <div class="grid-item">13</div>
-          <div class="grid-item">14</div>
-          <div class="grid-item">15</div>
-          <div class="grid-item">16</div>
-          <div class="grid-item">17</div>
-          <div class="grid-item">18</div>
-          <div class="grid-item">19</div>
-          <div class="grid-item">20</div>
-        </div>
-        <!--<div class="grid-item"><img src="ruta/a/tu/imagen1.jpg" alt="Descripción de la imagen 1"></div> -->
-        <!-- Los elementos de la cuadrícula van aquí -->
-        <a href="../index.html" class="navbar_button">Volver a inicio</a>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <!--Cintia-->
-      <div class="footer_container container">
-        <picture class="footer_logo">
-          <a href="./index.html">
-            <img
-              src="../img/animales/Animales_Carpincho4.png"
-              alt="logo Tierra de Historias"
-            />
-          </a>
-        </picture>
-        <div class="footer_menu">
-          <p>Menú</p>
-          <ul class="footer_links">
-            <li><a href="./biblioteca.html">Biblioteca</a></li>
-            <li>
-              <a href="./recursosdidacticos.html">Recursos didácticos</a>
-            </li>
-            <li><a href="./faq.html">Preguntas Frecuentes</a></li>
-          </ul>
-        </div>
-        <div class="footer_rrss">
-          <p>Redes Sociales</p>
-          <ul class="footer_rrss_iconos">
-            <li>
-              <a href=""><span class="gg--facebook"></span></a>
-            </li>
-            <li>
-              <a href=""><span class="bi--instagram"></span></a>
-            </li>
-          </ul>
-        </div>
       </div>
-      <p>All rights reserved 2024 - Grupo #19 © Vale, Lucas, Seba, Cin</p>
-    </footer>
+      <div class="footer_rrss">
+        <p>Redes Sociales</p>
+        <ul class="footer_rrss_iconos">
+          <li>
+            <a href=""><span class="gg--facebook"></span></a>
+          </li>
+          <li>
+            <a href=""><span class="bi--instagram"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p>All rights reserved 2024 - Grupo #19 © Vale, Lucas, Seba, Cin</p>
+  </footer>
 
-    <script src="../js/index.js"></script>
-  </body>
+  <script src="../js/index.js"></script>
+</body>
+
 </html>
