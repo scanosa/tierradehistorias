@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+  <title>Tierra de Historias | Recursos Externos</title>
+</head>
+<body>
+  <header class="header">
+    <img src="../img/header y footer/header_nube_completo-07.png" alt="fondo del header nube azul" class="navbar_fondo" />
+    <nav class="header_navbar container">
+      <picture class="navbar_logo">
+        <a href="../index.html">
+          <img src="../img/logo/logo01a.png" alt="logo Tierra de Historias" />
+        </a>
+      </picture>
+      <ul class="navbar_links">
+        <li><a href="./biblioteca.html">Biblioteca</a></li>
+        <li><a href="./recursosdidacticos.html">Recursos Didácticos</a></li>
+        <li><a href="./apiexterna.html">Api Externa</a></li>
+        <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+      </ul>
+      <a href="../pages/contacto.html" class="navbar_button"> Contactanos </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="exploraBiblio container">
+      <div class="conoceBiblioContent container">
+        <h2 class="exploraTitulo">Explorá Recursos Externos</h2>
+        <p class="exploraBajada">
+          ¡Cientos de libros y audiolibros listos para consultar te están esperando!
+        </p>
+        <div class="imgytitulo">
+          <img src="../img/animales/Animales_Libros.png" alt="">
+          <div>
+            <form class="formBusqueda" id="searchForm">
+              <div class="buscarContainer">
+                <input type="text" id="searchInput" name="q" placeholder="Buscar..." />
+                <span class="iconamoon--search-light"></span>
+              </div>
+              <button type="button" id="clearSearchButton">Limpiar búsqueda</button>
+            </form>
+          </div>
+          <img src="../img/animales/Animales_Tablet.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="biblioteca container">
+      <div class="bibliotecaGrilla"></div>
+      <div class="bibliotecaPaginado"></div>
+    </section>
+
+    <section class="resultadosBusqueda container" style="display: none;">
+      <h2>Resultados de la búsqueda</h2>
+      <div class="resultadosGrilla"></div>
+      <div class="resultadosPaginado"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer_container container">
+      <picture class="footer_logo">
+        <a href="./index.html">
+          <img src="../img/animales/Animales_Carpincho4.png" alt="logo Tierra de Historias" />
+        </a>
+      </picture>
+      <div class="footer_menu">
+        <p>Menú</p>
+        <ul class="footer_links">
+          <li><a href="./biblioteca.html">Biblioteca</a></li>
+          <li><a href="./recursosdidacticos.html">Recursos didácticos</a></li>
+          <li><a href="./apiexterna.html">Api Externa</a></li>
+          <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+        </ul>
+      </div>
+      <div class="footer_rrss">
+        <p>Redes Sociales</p>
+        <ul class="footer_rrss_iconos">
+          <li><a href=""><span class="gg--facebook"></span></a></li>
+          <li><a href=""><span class="bi--instagram"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <p>All rights reserved 2024 - Grupo #19 © Vale, Lucas, Seba, Cin</p>
+  </footer>
+
+  <script src="../js/apiexterna.js"></script>
+</body>
+</html>
