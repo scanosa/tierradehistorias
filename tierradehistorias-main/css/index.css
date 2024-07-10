@@ -528,6 +528,27 @@ footer {
   padding-top: var(--spacing64);
   padding-bottom: var(--spacing64);
 }
+.btnNuevoLibro {
+  display: block;
+  width: fit-content;
+  text-align: center;
+  color: white;
+  font-size: var(--heading6);
+  font-weight: 700;
+  background-color: var(--orange);
+  padding: 0.625rem 1.875rem 0.625rem 1.875rem;
+  margin-bottom:var(--spacing24);
+  border-radius: 15px;
+
+  transition: background-color 0.3s ease;
+}
+
+.btnNuevoLibro:hover {
+  background-color: var(--red);
+}
+
+
+
 .book-list-title{
   text-align: center;
   font-family: var(--headings-font);

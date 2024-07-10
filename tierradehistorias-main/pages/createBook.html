@@ -115,112 +115,113 @@
 <body>
     <header class="headerAdmin">
         <div class="header_container2 ">
-          <picture class="navbar_logo">
-            <a href="../index.html">
-              <img src="../img/logo/logo01a.png" alt="logo Tierra de Historias" />
-            </a>
-          </picture>
-    
-          <button class="abrir_menu" id="abrir"><span class="mingcute--menu-fill"></span></button>
-    
-          <nav class="header_navbar container" id="nav">
-            <button class="cerrar_menu" id="cerrar"><span class="icon-park-solid--close-one"></span></button>
-            <ul class="navbar_links">
-              <li><a href="./biblioteca.html">Biblioteca</a></li>
-              <li>
-                <a href="./recursosdidacticos.html">Recursos Didácticos</a>
-              </li>
-              <li><a href="./faq.html">Preguntas Frecuentes</a></li>
-              <li><a href="./login.html">Iniciar Sesión</a></li>
-              <li><a href="./register.html">Registrarse</a></li>
-            </ul>
-            <a href="./contacto.html" class="navbar_button">
-              Contactanos
-            </a>
-          </nav>
+            <picture class="navbar_logo">
+                <a href="../index.html">
+                    <img src="../img/logo/logo01a.png" alt="logo Tierra de Historias" />
+                </a>
+            </picture>
+
+            <button class="abrir_menu" id="abrir"><span class="mingcute--menu-fill"></span></button>
+
+            <nav class="header_navbar container" id="nav">
+                <button class="cerrar_menu" id="cerrar"><span class="icon-park-solid--close-one"></span></button>
+                <ul class="navbar_links">
+                    <li><a href="./biblioteca.html">Biblioteca</a></li>
+                    <li>
+                        <a href="./recursosdidacticos.html">Recursos Didácticos</a>
+                    </li>
+                    <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+                    <li><a href="./login.html">Iniciar Sesión</a></li>
+                    <li><a href="./register.html">Registrarse</a></li>
+                </ul>
+                <a href="./contacto.html" class="navbar_button">
+                    Contactanos
+                </a>
+            </nav>
         </div>
-      </header>
+    </header>
     <section class="createbookPage">
         <div class="container">
             <h1 class="book-list-title">Administrar Biblioteca</h1>
-            <div class="book-list">
-                <div class="book-list-header">
-                    <div class="col-id">ID</div>
-                    <div class="col-titulo">Título</div>
-                    <div class="col-editorial">Editorial</div>
-                    <div class="col-descripcion">Descripción</div>
-                    <div class="col-ano">Año</div>
-                    <div class="col-autor">Autor</div>
-                    <div class="col-imagen">Imagen</div>
-                    <div class="col-buttons">Acciones</div>
+            <a href="#crearLibroSection" class="btnNuevoLibro">+ Nuevo Libro</a>
+                <div class="book-list">
+                    <div class="book-list-header">
+                        <div class="col-id">ID</div>
+                        <div class="col-titulo">Título</div>
+                        <div class="col-editorial">Editorial</div>
+                        <div class="col-descripcion">Descripción</div>
+                        <div class="col-ano">Año</div>
+                        <div class="col-autor">Autor</div>
+                        <div class="col-imagen">Imagen</div>
+                        <div class="col-buttons">Acciones</div>
+                    </div>
+                    <div class="book-list-body" id="book-list">
+                        <!-- Libros se cargarán aquí -->
+                    </div>
                 </div>
-                <div class="book-list-body" id="book-list">
-                    <!-- Libros se cargarán aquí -->
-                </div>
-            </div>
         </div>
     </section>
 
-    <div>
-        <h1 class="mt-5">Crear Libro</h1>
-        <form id="create-book-form" class="mt-3" onsubmit="createBook(event)">
-            <div class="mb-3">
+ <div id="crearLibroSection">
+        <h1>Crear Libro</h1>
+        <form id="create-book-form" class="" onsubmit="createBook(event)">
+            <div class="">
                 <label for="title" class="form-label">Título</label>
                 <input type="text" class="form-control" id="title" name="title" required>
             </div>
-            <div class="mb-3">
+            <div class="">
                 <label for="editorial" class="form-label">Editorial</label>
                 <input type="text" class="form-control" id="editorial" name="editorial" required>
             </div>
-            <div class="mb-3">
-                <label for="description" class="form-label">Descripción</label>
+            <div class=""">
+                <label for=" description" class="form-label">Descripción</label>
                 <input type="text" class="form-control" id="description" name="description" required>
             </div>
-            <div class="mb-3">
-                <label for="ano" class="form-label">Año</label>
+            <div class=""">
+                <label for=" ano" class="form-label">Año</label>
                 <input type="number" class="form-control" id="ano" name="ano" required>
             </div>
-            <div class="mb-3">
-                <label for="autor" class="form-label">Autor</label>
+            <div class=""">
+                <label for=" autor" class="form-label">Autor</label>
                 <input type="text" class="form-control" id="autor" name="autor" required>
             </div>
-            <div class="mb-3">
-                <label for="image" class="form-label">Imagen</label>
+            <div class=""">
+                <label for=" image" class="form-label">Imagen</label>
                 <input type="file" class="form-control" id="image" name="image">
             </div>
-            <button type="submit" class="btn btn-primary">Crear Libro</button>
+            <button type="submit" class="">Crear Libro</button>
         </form>
     </div>
 
     <div>
-        <h1 class="mt-5">Editar Libro</h1>
-        <form id="edit-form" class="mt-3" style="display: none;" onsubmit="updateBook(event)">
+        <h1 class="">Editar Libro</h1>
+        <form id="edit-form" class="" style="display: none;" onsubmit="updateBook(event)">
             <input type="hidden" id="edit-id" name="id">
-            <div class="mb-3">
+            <div class="">
                 <label for="edit-title" class="form-label">Título</label>
                 <input type="text" class="form-control" id="edit-title" name="title" required>
             </div>
-            <div class="mb-3">
+            <div class="">
                 <label for="edit-editorial" class="form-label">Editorial</label>
                 <input type="text" class="form-control" id="edit-editorial" name="editorial" required>
             </div>
-            <div class="mb-3">
+            <div class="">
                 <label for="edit-description" class="form-label">Descripción</label>
                 <input type="text" class="form-control" id="edit-description" name="description" required>
             </div>
-            <div class="mb-3">
+            <div class="">
                 <label for="edit-ano" class="form-label">Año</label>
                 <input type="number" class="form-control" id="edit-ano" name="ano" required>
             </div>
-            <div class="mb-3">
+            <div class="">
                 <label for="edit-autor" class="form-label">Autor</label>
                 <input type="text" class="form-control" id="edit-autor" name="autor" required>
             </div>
-            <button type="submit" class="btn btn-primary">Actualizar Libro</button>
+            <button type="submit" class="">Actualizar Libro</button>
         </form>
-        </div>
-    </div>
 
+    </div>
+ 
     <footer class="footer">
         <div class="footer_container container">
             <picture class="footer_logo">
