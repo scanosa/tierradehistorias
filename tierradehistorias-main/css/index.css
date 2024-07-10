@@ -19,7 +19,9 @@
 }
 
 /*ESTILOS HEADER Y FOOTER*/
-
+.headerAdmin{
+  background-color: var(--aqua);
+}
 .header_container {
   background-color: var(--aqua);
   /*  margin-bottom:var(--spacing128); */
@@ -30,7 +32,7 @@
 }
 
 .header_container2 {
-  background-image: url("../img/headerfooter/hf_fondoheadernube.png");
+  background-image: url("../img/headerfooter/hf_fondoheadernubeAdmin.png");
   background-size: cover;
   background-repeat: repeat-x;
   /*  margin-bottom:var(--spacing128); */
@@ -520,7 +522,99 @@ footer {
   cursor: pointer;
 }
 
+/* Estilos de CreateBook*/
+.createbookPage{
+  background-color: var(--aqua);
+  padding-top: var(--spacing64);
+  padding-bottom: var(--spacing64);
+}
+.book-list-title{
+  text-align: center;
+  font-family: var(--headings-font);
+  font-weight: 600;
+  font-size: var(--heading2);
+ margin-top: var(--spacing24); 
+  color:var(--black-text);
+  padding-bottom:var(--spacing48);
+}
 
+.book-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-list-header,
+.book-list-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.book-list-header > div,
+.book-list-row > div {
+
+  padding: 10px;
+  border:none;
+  
+}
+
+.book-list-header {
+  background-color:var(--dark-aqua);
+  color:white;
+  font-weight: bold;
+}
+
+ .col-id {
+  flex: 0 1 5%;
+
+}
+
+.col-titulo{
+  font-weight: 700;
+}
+.col-titulo,
+.col-editorial,
+.col-descripcion,
+.col-autor,
+.col-imagen {
+  flex: 0 1 15%;
+}
+
+.col-ano,
+.col-buttons{
+  flex: 0 1 10%;
+}
+
+.col-buttons button{
+  background-color: transparent;
+
+} 
+
+.ic--baseline-edit {
+  cursor:pointer;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2301b1bf' d='M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75z'/%3E%3C/svg%3E");
+}
+
+.fluent--delete-32-filled {
+  cursor:pointer;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23ff5b74' d='M13.5 6.5V7h5v-.5a2.5 2.5 0 0 0-5 0m-2 .5v-.5a4.5 4.5 0 1 1 9 0V7H28a1 1 0 1 1 0 2h-1.508L24.6 25.568A5 5 0 0 1 19.63 30h-7.26a5 5 0 0 1-4.97-4.432L5.508 9H4a1 1 0 0 1 0-2zm2.5 6.5a1 1 0 1 0-2 0v10a1 1 0 1 0 2 0zm5-1a1 1 0 0 0-1 1v10a1 1 0 1 0 2 0v-10a1 1 0 0 0-1-1'/%3E%3C/svg%3E");
+}
+
+.book-list-row:nth-child(odd){
+  background-color:white;
+}
+.book-list-row:nth-child(even) {
+  background-color:var(--ultralight-aqua);
+}
 
 /*MEDIA QUERIES*/
 

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tierra de Historias | Administrar</title>
-   <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <title>Tierra de Historias | Administrar Biblioteca</title>
+    <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="../css/index.css">
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const token = localStorage.getItem('token');
             if (!token) {
                 window.location.href = '/login.html'; // Redirige a la página de inicio de sesión si no hay token
@@ -23,21 +24,22 @@
             const bookList = document.getElementById('book-list');
             bookList.innerHTML = '';
             books.forEach(book => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <th scope="row">${book.id}</th>
-                    <td>${book.title}</td>
-                    <td>${book.editorial}</td>
-                    <td>${book.description}</td>
-                    <td>${book.ano}</td>
-                    <td>${book.autor}</td>
-                    <td>${book.image ? `<img src="${book.image}" width="100" />` : 'No image'}</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm" onclick="editBook(${book.id})">Editar</button>
-                        <button class="btn btn-danger btn-sm" onclick="deleteBook(${book.id})">Eliminar</button>
-                    </td>
+                const row = document.createElement('div');
+                row.classList.add('book-list-row');
+                row.innerHTML = `
+                    <div class="col-id">${book.id}</div>
+                    <div class="col-titulo">${book.title}</div>
+                    <div class="col-editorial">${book.editorial}</div>
+                    <div class="col-descripcion">${book.description}</div>
+                    <div class="col-ano">${book.ano}</div>
+                    <div class="col-autor">${book.autor}</div>
+                    <div class="col-imagen">${book.image ? `<img src="${book.image}" width="100" />` : 'No image'}</div>
+                    <div class="col-buttons">
+                        <button title="Editar Libro"onclick="editBook(${book.id})"><span class="ic--baseline-edit"></span></button>
+                        <button title="Eliminar Libro" onclick="deleteBook(${book.id})"><span class="fluent--delete-32-filled"></span></button>
+                    </div>
                 `;
-                bookList.appendChild(tr);
+                bookList.appendChild(row);
             });
         }
 
@@ -62,7 +64,7 @@
         async function editBook(id) {
             const response = await fetch(`/api/books/${id}`);
             const book = await response.json();
-            
+
             document.getElementById('edit-id').value = book.id;
             document.getElementById('edit-title').value = book.title;
             document.getElementById('edit-editorial').value = book.editorial;
@@ -109,8 +111,9 @@
         }
     </script>
 </head>
+
 <body>
-    <header class="header">
+    <header class="headerAdmin">
         <div class="header_container2 ">
           <picture class="navbar_logo">
             <a href="../index.html">
@@ -137,29 +140,29 @@
           </nav>
         </div>
       </header>
-    <div class="container">
-        <h1 class="mt-5">Listado de Libros</h1>
-        
-        <table class="table table-striped mt-3">
-            <thead>
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Título</th>
-                    <th scope="col">Editorial</th>
-                    <th scope="col">Descripción</th>
-                    <th scope="col">Año</th>
-                    <th scope="col">Autor</th>
-                    <th scope="col">Imagen</th>
-                    <th scope="col">Acciones</th>
-                </tr>
-            </thead>
-            <tbody id="book-list">
-                <!-- Libros se cargarán aquí -->
-            </tbody>
-        </table>
+    <section class="createbookPage">
+        <div class="container">
+            <h1 class="book-list-title">Administrar Biblioteca</h1>
+            <div class="book-list">
+                <div class="book-list-header">
+                    <div class="col-id">ID</div>
+                    <div class="col-titulo">Título</div>
+                    <div class="col-editorial">Editorial</div>
+                    <div class="col-descripcion">Descripción</div>
+                    <div class="col-ano">Año</div>
+                    <div class="col-autor">Autor</div>
+                    <div class="col-imagen">Imagen</div>
+                    <div class="col-buttons">Acciones</div>
+                </div>
+                <div class="book-list-body" id="book-list">
+                    <!-- Libros se cargarán aquí -->
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <div>
         <h1 class="mt-5">Crear Libro</h1>
-
         <form id="create-book-form" class="mt-3" onsubmit="createBook(event)">
             <div class="mb-3">
                 <label for="title" class="form-label">Título</label>
@@ -187,9 +190,10 @@
             </div>
             <button type="submit" class="btn btn-primary">Crear Libro</button>
         </form>
+    </div>
 
+    <div>
         <h1 class="mt-5">Editar Libro</h1>
-
         <form id="edit-form" class="mt-3" style="display: none;" onsubmit="updateBook(event)">
             <input type="hidden" id="edit-id" name="id">
             <div class="mb-3">
@@ -214,41 +218,43 @@
             </div>
             <button type="submit" class="btn btn-primary">Actualizar Libro</button>
         </form>
+        </div>
     </div>
-    
+
     <footer class="footer">
-      <div class="footer_container container">
-        <picture class="footer_logo">
-          <a href="../index.html">
-            <img src="../img/animales/Animales_Carpincho4.png" alt="logo Tierra de Historias" />
-          </a>
-        </picture>
-        <div class="footer_menu">
-          <p>Menú</p>
-          <ul class="footer_links">
-            <li><a href="./biblioteca.html">Biblioteca</a></li>
-            <li>
-              <a href="./recursosdidacticos.html">Recursos didácticos</a>
-            </li>
-            <li><a href="./faq.html">Preguntas Frecuentes</a></li>
-            <li><a href="./login.html">Iniciar Sesión</a></li>
-            <li><a href="./register.html">Registrarse</a></li>
-  
-          </ul>
+        <div class="footer_container container">
+            <picture class="footer_logo">
+                <a href="../index.html">
+                    <img src="../img/animales/Animales_Carpincho4.png" alt="logo Tierra de Historias" />
+                </a>
+            </picture>
+            <div class="footer_menu">
+                <p>Menú</p>
+                <ul class="footer_links">
+                    <li><a href="./biblioteca.html">Biblioteca</a></li>
+                    <li>
+                        <a href="./recursosdidacticos.html">Recursos didácticos</a>
+                    </li>
+                    <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+                    <li><a href="./login.html">Iniciar Sesión</a></li>
+                    <li><a href="./register.html">Registrarse</a></li>
+
+                </ul>
+            </div>
+            <div class="footer_rrss">
+                <p>Redes Sociales</p>
+                <ul class="footer_rrss_iconos">
+                    <li>
+                        <a href=""><span class="gg--facebook"></span></a>
+                    </li>
+                    <li>
+                        <a href=""><span class="bi--instagram"></span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="footer_rrss">
-          <p>Redes Sociales</p>
-          <ul class="footer_rrss_iconos">
-            <li>
-              <a href=""><span class="gg--facebook"></span></a>
-            </li>
-            <li>
-              <a href=""><span class="bi--instagram"></span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <p>All rights reserved 2024 - Grupo #19 © Vale, Lucas, Seba, Cin</p>
+        <p>All rights reserved 2024 - Grupo #19 © Vale, Lucas, Seba, Cin</p>
     </footer>
 </body>
+
 </html>
