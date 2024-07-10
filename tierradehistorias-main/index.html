@@ -1,232 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
-    <title>Tierra de Historias</title>
-  </head>
 
-  <body>
-   
-    <header class="header">
-      <div class="header_container">
-        <nav class="header_navbar container">
-          <picture class="navbar_logo">
-            <a href="./index.html">
-              <img
-                src="./img/logo/logo01a.png"
-                alt="logo Tierra de Historias"
-              />
-            </a>
-          </picture>
-          <ul class="navbar_links">
-            <li><a href="./pages/biblioteca.html">Biblioteca</a></li>
-            <li><a href="./pages/recursosdidacticos.html">Recursos Didácticos</a></li>
-            <li><a href="./pages/faq.html">Preguntas Frecuentes</a></li>
-            <li><a href="./pages/login.html">Acceso</a></li>
-            <li><a href="./pages/register.html">Registrarse</a></li>
-          </ul>
-          <a href="./pages/contacto.html" class="navbar_button">
-            Contactanos
-          </a>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  <title>Tierra de Historias</title>
+</head>
 
-    <main>
-      <section class="banner">
-        <img src="./img/misc/banner_cropped.png" alt="" />
-        <div class="banner_content container">
-          <div class="banner_innerContent">
-            <h1 class="banner_title">
-              ¡Explorá un mundo lleno de historias y aventuras!
-            </h1>
-            <p class="banner_text">
-              Descubrí la magia de la lectura con
-              <span class="banner_nombreWeb">Tierra de Historias</span>, donde
-              los sueños se vuelven realidad y la aventura te espera en cada
-              página y en cada palabra. ¡Preparate para desatar tu imaginación!
-            </p>
-          </div>
-        </div>
-      </section>
+<body>
 
-      <section class="conoceBiblio">
-        <div class="conoceBiblioContent container">
-          <h2 class="conoceTitulo">Conocé nuestra biblioteca</h2>
-          <form
-            class="formBusqueda"
-            type="searchForm"
-            action="./pages/biblioteca.html"
-            method="get"
-          >
-            <div class="buscarContainer">
-              <input
-                type="text"
-                id="searchInput"
-                name="q"
-                placeholder="Buscar..."
-              />
-              <span class="iconamoon--search-light"></span>
-            </div>
-          </form>
-          <p class="conoceBajada">
-            ¡Cientos de libros y audiolibros listos para descargar te están
-            esperando!
-          </p>
-        </div>
-
-        <div class="librosSlider container">
-          <h2 class="librosSliderTitulo">Libros más leídos</h2>
-          <div class="slider">
-            <div class="slider-container">
-              <div class="slide">
-                <img
-                  src="./img/portadas libros/una amistad imposible.jpg"
-                  alt="Tapa del libro 1"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="./img/portadas libros/un elefante ocupa mucho espacio.jpg"
-                  alt="Tapa del libro 2"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="./img/portadas libros/un anio de cumpleaños.jpg"
-                  alt="Tapa del libro 3"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="./img/portadas libros/ruidos monstruosos.jpg"
-                  alt="Tapa del libro 3"
-                />
-              </div>
-            </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-          </div>
-        </div>
-
-        <div class="librosSlider container">
-          <h2 class="librosSliderTitulo">Audiolibros más escuchados</h2>
-          <div class="slider">
-            <div class="slider-container">
-              <div class="slide">
-                <img
-                  src="./img/portadas libros/Seis sabios ciegos y un elefante.jpg"
-                  alt="Tapa del libro 1"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="./img/portadas libros/Samara y el ruiseño.jpg"
-                  alt="Tapa del libro 2"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="./img/portadas libros/Los pavos reales y Pomposo el cuervo.jpg"
-                  alt="Tapa del libro 3"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  src="./img/portadas libros/pulgoso.jpg"
-                  alt="Tapa del libro 3"
-                />
-              </div>
-            </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-          </div>
-        </div>
-
-        <a href="./pages/biblioteca.html" class="botonNaranja">
-          Explorá la Biblioteca
-        </a>
-      </section>
-
-      <section class="contactanos">
-        <div class="contactanosContent container">
-          <h2 class="contactanosTitulo">Contactanos</h2>
-          <p class="contactanosBajada">
-            Nos encantaría escuchar tus sugerencias y comentarios.
-          </p>
-          <p class="contactanosBajada">
-            Por favor, completá el formulario o envianos un email a
-            tierradehistorias@mail.com
-          </p>
-          <div class="contactanosForm">
-            <form
-              action=""
-              method="post"
-              enctype="text/plain"
-            >
-              <div class="contactanosCampos">
-                <div class="contactanosNomEmail">
-                  <div class="contactanosNombre">
-                    <label for="fnombre">Nombre</label>
-                    <input type="text" name="fnombre" id="fnombre" required="required"/>
-                  </div>
-                  <div class="contactanosEmail">
-                    <label for="femail">E-mail</label>
-                    <input type="text" name="femail" id="femail" required="required"/>
-                  </div>
-                </div>
-                <div class="contactanosMensaje">
-                  <label for="fmensaje">Mensaje</label>
-                  <textarea name="mensaje" rows="10" id="fmensaje" required="required"></textarea>
-                </div>
-              </div>
-              <div class="contactanosEnviar">
-                <input type="submit" value="Enviar" />
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer_container container">
-        <picture class="footer_logo">
+  <header class="header">
+    <div class="header_container">
+      <nav class="header_navbar container">
+        <picture class="navbar_logo">
           <a href="./index.html">
-            <img
-              src="./img/animales/Animales_Carpincho4.png"
-              alt="logo Tierra de Historias"
-            />
+            <img src="./img/logo/logo01a.png" alt="logo Tierra de Historias" />
           </a>
         </picture>
-        <div class="footer_menu">
-          <p>Menú</p>
-          <ul class="footer_links">
-            <li><a href="./pages/biblioteca.html">Biblioteca</a></li>
-            <li>
-              <a href="./pages/recursosdidacticos.html">Recursos didácticos</a>
-            </li>
-            <li><a href="./pages/faq.html">Preguntas Frecuentes</a></li>
-          </ul>
-        </div>
-        <div class="footer_rrss">
-          <p>Redes Sociales</p>
-          <ul class="footer_rrss_iconos">
-            <li>
-              <a href=""><span class="gg--facebook"></span></a>
-            </li>
-            <li>
-              <a href=""><span class="bi--instagram"></span></a>
-            </li>
-          </ul>
+        <ul class="navbar_links">
+          <li><a href="./pages/biblioteca.html">Biblioteca</a></li>
+          <li><a href="./pages/recursosdidacticos.html">Recursos Didácticos</a></li>
+          <li><a href="./pages/faq.html">Preguntas Frecuentes</a></li>
+          <li><a href="./pages/login.html">Acceso</a></li>
+          <li><a href="./pages/register.html">Registrarse</a></li>
+        </ul>
+        <a href="./pages/contacto.html" class="navbar_button">
+          Contactanos
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <img src="./img/misc/banner_cropped.png" alt="" />
+      <div class="banner_content container">
+        <div class="banner_innerContent">
+          <h1 class="banner_title">
+            ¡Explorá un mundo lleno de historias y aventuras!
+          </h1>
+          <p class="banner_text">
+            Descubrí la magia de la lectura con
+            <span class="banner_nombreWeb">Tierra de Historias</span>, donde
+            los sueños se vuelven realidad y la aventura te espera en cada
+            página y en cada palabra. ¡Preparate para desatar tu imaginación!
+          </p>
         </div>
       </div>
-      <p>All rights reserved 2024 - Grupo #19 © Vale, Lucas, Seba, Cin</p>
-    </footer>
+    </section>
 
-    <script src="./js/index.js"></script>
-  </body>
+    <section class="conoceBiblio">
+      <div class="conoceBiblioContent container">
+        <h2 class="conoceTitulo">Conocé nuestra biblioteca</h2>
+        <form class="formBusqueda" type="searchForm" action="./pages/biblioteca.html" method="get">
+          <div class="buscarContainer">
+            <input type="text" id="searchInput" name="q" placeholder="Buscar..." />
+            <span class="iconamoon--search-light"></span>
+          </div>
+        </form>
+        <p class="conoceBajada">
+          ¡Cientos de libros y audiolibros listos para descargar te están
+          esperando!
+        </p>
+      </div>
+
+      <div class="librosSlider container">
+        <h2 class="librosSliderTitulo">Libros más leídos</h2>
+        <div class="slider">
+          <div class="slider-container">
+            <div class="slide">
+              <img src="./img/portadas libros/una amistad imposible.jpg" alt="Tapa del libro 1" />
+            </div>
+            <div class="slide">
+              <img src="./img/portadas libros/un elefante ocupa mucho espacio.jpg" alt="Tapa del libro 2" />
+            </div>
+            <div class="slide">
+              <img src="./img/portadas libros/un anio de cumpleaños.jpg" alt="Tapa del libro 3" />
+            </div>
+            <div class="slide">
+              <img src="./img/portadas libros/ruidos monstruosos.jpg" alt="Tapa del libro 3" />
+            </div>
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </div>
+
+      <div class="librosSlider container">
+        <h2 class="librosSliderTitulo">Audiolibros más escuchados</h2>
+        <div class="slider">
+          <div class="slider-container">
+            <div class="slide">
+              <img src="./img/portadas libros/Seis sabios ciegos y un elefante.jpg" alt="Tapa del libro 1" />
+            </div>
+            <div class="slide">
+              <img src="./img/portadas libros/Samara y el ruiseño.jpg" alt="Tapa del libro 2" />
+            </div>
+            <div class="slide">
+              <img src="./img/portadas libros/Los pavos reales y Pomposo el cuervo.jpg" alt="Tapa del libro 3" />
+            </div>
+            <div class="slide">
+              <img src="./img/portadas libros/pulgoso.jpg" alt="Tapa del libro 3" />
+            </div>
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </div>
+
+      <a href="./pages/biblioteca.html" class="botonNaranja">
+        Explorá la Biblioteca
+      </a>
+    </section>
+
+    <section class="contactanos">
+      <div class="contactanosContent container">
+        <h2 class="contactanosTitulo">Contactanos</h2>
+        <p class="contactanosBajada">
+          Nos encantaría escuchar tus sugerencias y comentarios.
+        </p>
+        <p class="contactanosBajada">
+          Por favor, completá el formulario o envianos un email a
+          tierradehistorias@mail.com
+        </p>
+        <div class="contactanosForm">
+          <form action="" method="post" enctype="text/plain">
+            <div class="contactanosCampos">
+              <div class="contactanosNomEmail">
+                <div class="contactanosNombre">
+                  <label for="fnombre">Nombre</label>
+                  <input type="text" name="fnombre" id="fnombre" required="required" />
+                </div>
+                <div class="contactanosEmail">
+                  <label for="femail">E-mail</label>
+                  <input type="text" name="femail" id="femail" required="required" />
+                </div>
+              </div>
+              <div class="contactanosMensaje">
+                <label for="fmensaje">Mensaje</label>
+                <textarea name="mensaje" rows="10" id="fmensaje" required="required"></textarea>
+              </div>
+            </div>
+            <div class="contactanosEnviar">
+              <input type="submit" value="Enviar" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer_container container">
+      <picture class="footer_logo">
+        <a href="./index.html">
+          <img src="./img/animales/Animales_Carpincho4.png" alt="logo Tierra de Historias" />
+        </a>
+      </picture>
+      <div class="footer_menu">
+        <p>Menú</p>
+        <ul class="footer_links">
+          <li><a href="./pages/biblioteca.html">Biblioteca</a></li>
+          <li>
+            <a href="./pages/recursosdidacticos.html">Recursos didácticos</a>
+          </li>
+          <li><a href="./pages/faq.html">Preguntas Frecuentes</a></li>
+          <li><a href="./pages/login.html">Acceso</a></li>
+          <li><a href="./pages/register.html">Registrarse</a></li>
+
+        </ul>
+      </div>
+      <div class="footer_rrss">
+        <p>Redes Sociales</p>
+        <ul class="footer_rrss_iconos">
+          <li>
+            <a href=""><span class="gg--facebook"></span></a>
+          </li>
+          <li>
+            <a href=""><span class="bi--instagram"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p>All rights reserved 2024 - Grupo #19 © Vale, Lucas, Seba, Cin</p>
+  </footer>
+
+  <script src="./js/index.js"></script>
+</body>
+
 </html>

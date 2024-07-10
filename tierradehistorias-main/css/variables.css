@@ -13,6 +13,10 @@
   --black-text: #171717;
   --dark-red: #d33048;
   --dark-lemon: #dfe666;
+  --ultradark-lemon:#a2aa00;
+  --green: #a6ca52;
+  --light-green: #e6ffac;
+  --dark-green: #6f941a;
 
   /*TIPOGRAFÍAS*/
   --base-font: "Nunito", sans-serif;
@@ -20,6 +24,7 @@
   --nombre-font: "TdH", sans-serif;
 
   /*FONT-SIZES*/
+  
   --heading1: 3.75rem; /*60px*/
   --heading2: 3.125rem; /*50px*/
   --heading3: 2.5rem; /*40px*/
@@ -27,16 +32,20 @@
   --heading5: 1.5rem; /*24px*/
   --heading6: 1.25rem; /*20px*/
 
+  --text-xlarge:  1.123rem;/*18px*/
   --text-large: 1rem; /*16px*/
   --text-medium: 0.9rem; /*14px*/
   --text-regular: 0.812rem; /*13px*/
   --text-small: 0.625rem; /*10px*/
+  --text-xsmall: 0.5rem; /*8px*/
 
   /*ESPACIOS*/
+  --spacing128:8rem;
   --spacing96: 6rem;
   --spacing64: 4rem;
   --spacing48: 3rem; /*48px*/
   --spacing40: 2.5rem; /*40px*/
+  --spacing36: 2.25rem; /*36px*/
   --spacing24: 1.4rem; /*24px*/
   --spacing16: 1rem; /*16px*/
   --spacing10: 0.625rem; /*10px*/

@@ -16,6 +16,20 @@ nextBtn.addEventListener('click', () => {
   updateSlidePosition();
 });
 
+/*Código para el menú responsive*/
+
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+abrir.addEventListener("click",
+  ()=>{nav.classList.add("visible");}
+);
+
+cerrar.addEventListener("click",
+  ()=> {nav.classList.remove("visible");}
+)
+
 function updateSlidePosition() {
   const slideWidth = slides[0].clientWidth;
   sliderContainer.style.transform = `translateX(${-slideWidth * slideIndex}px)`;

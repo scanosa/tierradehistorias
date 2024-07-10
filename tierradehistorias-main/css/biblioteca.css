@@ -1,0 +1,152 @@
+/*Biblioteca.html*/
+
+.exploraBiblio {
+ 
+    margin-top:var(--spacing64);
+    margin-left:auto;
+    margin-right:auto;
+    
+  }
+  
+  .exploraTitulo{
+    text-align: center;
+    font-family: var(--headings-font);
+    font-weight: 600;
+    font-size: var(--heading2);
+    margin-top: var(--spacing24);
+  }
+  
+  .exploraBajada{
+    text-align: center;
+    font-size: var(--heading5);
+    margin-top: var(--spacing24);
+    margin-bottom: var(--spacing40);
+  }
+  
+  .imgytitulo{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imgytitulo img{
+    width:10vw;
+  }
+  
+  .biblioFilters{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:0.5rem;
+    margin-top: var(--spacing24);
+    margin-bottom: var(--spacing40);
+  /*   margin-left:auto;
+    margin-right:auto; */
+  }
+  
+  .filtersSelects{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+  }
+  
+  .filterSelect{
+    font-family: var(--base-font);
+    font-size: var(--text-medium);
+   
+    border: 1px solid #cdcdcd;
+    border-radius: 1rem;
+    padding: var(--spacing8) var(--spacing10);
+  }
+  
+  .filterSelect option{
+    display:block;
+    padding:var(--spacing8);
+  }
+  
+  
+  .filtersChecks{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+  }
+  
+  .formato, .nivelLectura{
+    display: flex;
+    align-items: baseline;
+  
+  }
+  
+  .formato p, 
+  .nivelLecturaTitulo{
+    font-family: var(--base-font);
+    font-size: var(--text-large);
+    font-weight: 600;
+    padding: var(--spacing10);
+  }
+  
+  .formatoChecks label, .nivelLecturaChecks label 
+  {
+    font-size: var(--text-medium);
+    padding: var(--spacing8);
+  }
+
+ .nivelLecturaChecks input{
+    height:var(--text-medium);
+  }
+
+  .formatoChecks input{
+    height: var(--text-medium);
+  }
+  
+
+  
+  .biblioteca{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:var(--spacing48);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding:var(--spacing24);
+    width:80vw;
+  }
+  
+  
+  
+  .bibliotecaGrilla{
+    display: flex;
+    flex-wrap:wrap;
+    gap:2vw;
+    justify-content:center;
+    align-items:flex-start;
+    margin-bottom:var(--spacing40);
+  
+  }
+  
+  .bibliotecaGrilla picture {
+    width:15vw;
+    
+  }
+  
+  .bibliotecaPaginado {
+    display: inline-block;
+  }
+  
+  .bibliotecaPaginado a {
+    color:var(--black-text);
+    float: left;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+  
+  .bibliotecaPaginado a.activePage {
+    background-color:var(--red);
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  
+  
+  

@@ -1,0 +1,194 @@
+
+.contactanos {
+    background-color: var(--light-red);
+    padding-top: var(--spacing64);
+    padding-bottom: var(--spacing64);
+  }
+  
+  .contactanosPage {
+    background-color: var(--ultralight-red);
+    padding-top: var(--spacing64);
+    padding-bottom: var(--spacing64);
+  }
+  
+  .contactanosContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contactanosTitulo {
+    text-align: center;
+    font-family: var(--headings-font);
+    font-weight: 600;
+    font-size: var(--heading2);
+    margin-bottom: var(--spacing40);
+  }
+  
+  .contactanosBajada {
+    text-align: center;
+    font-size: var(--heading5);
+  }
+  
+  .contactanosCampos, .contactanosMotivoPais, .errorContacto, .exitoContacto{
+    margin-top: var(--spacing40);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 70%;
+  }
+  
+  .contactanosCampos label {
+    font-size: var(--heading6);
+    font-weight: 700;
+    padding-bottom: var(--spacing16);
+  }
+  
+  .contactanosCampos input {
+    border: none;
+    border-radius: 0.5rem;
+    padding: var(--spacing10);
+  /*   border: 1px solid #cdcdcd; */
+  }
+  
+  .contactanosCampos textarea {
+    border: none;
+    border-radius: 0.5rem;
+    padding: var(--spacing10);
+    /* border: 1px solid #cdcdcd; */
+  }
+  
+  .contactanosCampos #fnombre,
+  .contactanosCampos #femail,
+  .contactanosCampos #fmensaje{
+    font-family: var(--base-font);
+    font-size: var(--text-large);
+
+  }
+  
+  .contactanosNomEmail {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  
+  .contactanosNombre,
+  .contactanosEmail {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .contactanosMensaje {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contactanosForm {
+    width: 100%;
+  }
+  
+  .contactanosForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contactanosEnviar input {
+    width: fit-content;
+    text-align: center;
+    color: white;
+    background-color: var(--red);
+    font-family: var(--base-font);
+    font-size: var(--heading6);
+    font-weight: 600;
+    border: none;
+    padding:0.625rem 1.875rem 0.625rem 1.875rem;
+    border-radius: 15px;
+    margin-top: var(--spacing48);
+  }
+  
+  .contactanosEnviar input:hover {
+    background-color: var(--dark-red);
+    cursor: pointer;
+  }
+  
+  .contactanos_imagen img {
+    width: 15vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+
+/*  .contactanosMotivoPais{
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--spacing40);
+    gap: 2rem;
+    width: 70%;
+  }
+  */
+
+  .motivos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--spacing24);
+    padding-top:var(--spacing16);
+  }
+
+
+  .contactanosMotivo p{  
+    font-size: var(--heading6);
+    font-weight: 700;
+  }
+
+  .motivo-grupo{
+    display: flex;
+    align-items:center;
+    gap:var(--spacing8);
+  }
+
+  .contactanosMotivo label{
+    font-size: var(--heading6);
+  }
+
+  
+  .contactanosPais p{
+    font-size: var(--heading6);
+    font-weight: 700;
+    padding-bottom: var(--spacing16);
+  }
+
+
+  .styled-select select{
+    font-size: var(--heading6);
+    font-family: var(--base-font);
+    padding: var(--spacing10);
+    border:none;
+    border-radius: 0.5rem;
+  
+  }
+
+
+  .errorContacto{
+    background-color: var(--dark-red);
+    margin-top:var(--spacing36);
+    padding: var(--spacing16);
+    text-align: center;
+    color:var(--ultralight-red);
+    font-size: var(--heading6);
+    /* font-weight: 700; */
+    display:none;
+  }
+
+
+  .errorContacto.visible{
+    display:block;
+  }
+
