@@ -455,7 +455,7 @@ footer {
  
     }
 
-.login-campos, .register-campos{
+.login-campos, .register-campos, .crearLibro-campos{
   display:flex;
   flex-direction:column;
   align-items: center;
@@ -517,13 +517,13 @@ footer {
   font-weight: 600;
   border: none;
   padding: 0.625rem 1.875rem 0.625rem 1.875rem;
-  border-radius: 15px;
+  border-radius: 0.85rem;
   margin-top: var(--spacing48);
   cursor: pointer;
 }
 
 /* Estilos de CreateBook*/
-.createbookPage{
+.listadoLibrosSection{
   background-color: var(--aqua);
   padding-top: var(--spacing64);
   padding-bottom: var(--spacing64);
@@ -538,7 +538,7 @@ footer {
   background-color: var(--orange);
   padding: 0.625rem 1.875rem 0.625rem 1.875rem;
   margin-bottom:var(--spacing24);
-  border-radius: 15px;
+  border-radius: 0.85rem;
 
   transition: background-color 0.3s ease;
 }
@@ -582,10 +582,13 @@ footer {
   background-color:var(--dark-aqua);
   color:white;
   font-weight: bold;
+  border-top-left-radius:0.85rem;
+  border-top-right-radius:0.85rem;
 }
 
  .col-id {
   flex: 0 1 5%;
+
 
 }
 
@@ -636,6 +639,172 @@ footer {
 .book-list-row:nth-child(even) {
   background-color:var(--ultralight-aqua);
 }
+
+.book-list-row:last-child{
+  border-bottom-left-radius: 0.85rem;
+  border-bottom-right-radius: 0.85rem;
+}
+
+.book-list-body .col-buttons{
+  display:flex;
+  justify-content: center;
+  align-items:baseline;
+
+}
+
+.crearLibroSection{
+  background-color: var(--aqua);
+  padding-top: var(--spacing48);
+  padding-bottom: var(--spacing48);
+
+}
+
+
+.crearLibroTitulo,.listadoLibrosTitulo{
+
+  text-align: left;
+  font-family: var(--headings-font);
+  font-weight: 600;
+  font-size: var(--heading3);
+/*  margin-top: var(--spacing16);  */
+  color: var(--black-text);
+  padding-bottom:var(--spacing16);
+
+}
+
+.crearLibro-form{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  gap:1rem;
+  padding-top:var(--spacing40);
+  padding-bottom:var(--spacing40);
+  /* width: 50vw; */
+  margin-left:auto;
+  margin-right:auto;
+  background-color:var(--ultralight-aqua);
+  border-radius:0.85rem;
+  }
+
+
+  .editarLibroSection{
+    background-color: var(--aqua);
+    padding-top: var(--spacing48);
+    padding-bottom: var(--spacing48);
+ 
+  
+  }
+
+  .oculto{
+    display:none;
+  }
+
+
+  .editarLibro-form{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:1rem;
+    padding-top:var(--spacing40);
+    padding-bottom:var(--spacing40);
+    /* width: 50vw; */
+    margin-left:auto;
+    margin-right:auto;
+    background-color:var(--ultralight-aqua);
+    border-radius:0.85rem;
+    
+    }
+  
+
+
+.crearLibro-campos label{
+  margin-bottom:var(--spacing8);
+  font-family: var(--base-font);
+  font-weight: 700;
+  width: 50vw;
+  
+    }
+
+.crearLibro-campos input {
+						
+      font-family: var(--base-font);
+      font-size: var(--text-medium);
+      border: 1px solid #cdcdcd;
+      border-radius: 1rem;
+      padding: var(--spacing10);
+      width: 50vw;
+     
+    }
+
+    .crearLibro-campos input[type="file"]{
+      border:none;
+      background-color:var(--ultralight-aqua);
+    }
+
+    .crearLibro-campos .btnUpload {
+      display: block;
+      width: 100%;       /* Ancho completo */
+      padding: var(--spacing10);     /* Relleno interno */
+      font-family: var(--base-font);
+      font-size: 1rem;   /* Tamaño de fuente */
+      border: 1px solid #ccc; /* Borde gris claro */
+      border-radius: 4px; /* Bordes redondeados */
+      background-color: #fff; /* Fondo blanco */
+    }
+
+
+    .botonesCrearLibro, .botonesEditarLibro{
+      display: flex;
+      gap:var(--spacing24);
+    }
+
+    .btnCrearLibro, .btnEditarLibro {
+      display: block;
+      width: fit-content;
+      text-align: center;
+      color: white;
+      font-size: var(--heading6);
+      font-weight: 700;
+      background-color: var(--orange);
+      padding: 0.625rem 1.875rem 0.625rem 1.875rem;
+      margin-bottom:var(--spacing36);
+      margin-top:var(--spacing36);
+      border-radius: 15px;
+    
+      transition: background-color 0.3s ease;
+    }
+    
+    .btnCrearLibro:hover {
+      background-color: var(--red);
+    }
+    .btnEditarLibro:hover {
+      background-color: var(--red);
+    }
+
+    
+    .btnCancelarCrearLibro, .btnCancelarEditarLibro {
+      display: block;
+      width: fit-content;
+      text-align: center;
+      color: white;
+      font-size: var(--heading6);
+      font-weight: 700;
+      background-color: var(--orange);
+      padding: 0.625rem 1.875rem 0.625rem 1.875rem;
+      margin-bottom:var(--spacing36);
+      margin-top:var(--spacing36);
+      border-radius: 15px;
+    
+      transition: background-color 0.3s ease;
+    }
+    
+    .btnCancelarCrearLibro:hover {
+      background-color: var(--red);
+    }
+
+    .btnCancelarEditarLibro:hover {
+      background-color: var(--red);
+    }
 
 /*MEDIA QUERIES*/
 

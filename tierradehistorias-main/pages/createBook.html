@@ -35,8 +35,9 @@
                     <div class="col-autor">${book.autor}</div>
                     <div class="col-imagen">${book.image ? `<img src="${book.image}" width="100" />` : 'No image'}</div>
                     <div class="col-buttons">
-                        <button title="Editar Libro"onclick="editBook(${book.id})"><span class="ic--baseline-edit"></span></button>
-                        <button title="Eliminar Libro" onclick="deleteBook(${book.id})"><span class="fluent--delete-32-filled"></span></button>
+                        <a onclick="editBook(${book.id})"><span class="ic--baseline-edit"></span></a>
+                        
+                        <a onclick="deleteBook(${book.id})"><span class="fluent--delete-32-filled"></span></a>
                     </div>
                 `;
                 bookList.appendChild(row);
@@ -45,8 +46,10 @@
 
         async function createBook(event) {
             event.preventDefault();
+            
             const form = event.target;
             const formData = new FormData(form);
+            
             const token = localStorage.getItem('token'); // Obtén el token del almacenamiento local
 
             await fetch('/api/books/create', {
@@ -64,14 +67,14 @@
         async function editBook(id) {
             const response = await fetch(`/api/books/${id}`);
             const book = await response.json();
-
+            document.getElementById('editarLibroSection').classList.remove('oculto');
             document.getElementById('edit-id').value = book.id;
             document.getElementById('edit-title').value = book.title;
             document.getElementById('edit-editorial').value = book.editorial;
             document.getElementById('edit-description').value = book.description;
             document.getElementById('edit-ano').value = book.ano;
             document.getElementById('edit-autor').value = book.autor;
-            document.getElementById('edit-form').style.display = 'block';
+            document.getElementById('editarLibroSection').scrollIntoView({ behavior: 'smooth' });
         }
 
         async function updateBook(event) {
@@ -91,8 +94,10 @@
             });
 
             form.reset();
-            document.getElementById('edit-form').style.display = 'none';
+            document.getElementById('editarLibroSection').classList.add('oculto');
             fetchBooks();
+            window.scrollTo(0, 0); // para desplazar la página al comienzo
+
         }
 
         async function deleteBook(id) {
@@ -140,88 +145,98 @@
             </nav>
         </div>
     </header>
-    <section class="createbookPage">
+    <section class="listadoLibrosSection">
         <div class="container">
             <h1 class="book-list-title">Administrar Biblioteca</h1>
-            <a href="#crearLibroSection" class="btnNuevoLibro">+ Nuevo Libro</a>
-                <div class="book-list">
-                    <div class="book-list-header">
-                        <div class="col-id">ID</div>
-                        <div class="col-titulo">Título</div>
-                        <div class="col-editorial">Editorial</div>
-                        <div class="col-descripcion">Descripción</div>
-                        <div class="col-ano">Año</div>
-                        <div class="col-autor">Autor</div>
-                        <div class="col-imagen">Imagen</div>
-                        <div class="col-buttons">Acciones</div>
-                    </div>
-                    <div class="book-list-body" id="book-list">
-                        <!-- Libros se cargarán aquí -->
-                    </div>
+            <a onclick="document.getElementById('crearLibroSection').classList.remove('oculto'); document.getElementById('crearLibroSection').scrollIntoView({ behavior: 'smooth' });" class="btnNuevoLibro">+ Nuevo Libro</a>
+            <h3 class="listadoLibrosTitulo">Listado de Libros</h3>
+            <div class="book-list">
+                <div class="book-list-header">
+                    <div class="col-id">ID</div>
+                    <div class="col-titulo">Título</div>
+                    <div class="col-editorial">Editorial</div>
+                    <div class="col-descripcion">Descripción</div>
+                    <div class="col-ano">Año</div>
+                    <div class="col-autor">Autor</div>
+                    <div class="col-imagen">Imagen</div>
+                    <div class="col-buttons">Acciones</div>
                 </div>
+                <div class="book-list-body" id="book-list">
+                    <!-- Libros se cargarán aquí -->
+                </div>
+            </div>
         </div>
     </section>
 
- <div id="crearLibroSection">
-        <h1>Crear Libro</h1>
-        <form id="create-book-form" class="" onsubmit="createBook(event)">
-            <div class="">
-                <label for="title" class="form-label">Título</label>
-                <input type="text" class="form-control" id="title" name="title" required>
-            </div>
-            <div class="">
-                <label for="editorial" class="form-label">Editorial</label>
-                <input type="text" class="form-control" id="editorial" name="editorial" required>
-            </div>
-            <div class=""">
-                <label for=" description" class="form-label">Descripción</label>
-                <input type="text" class="form-control" id="description" name="description" required>
-            </div>
-            <div class=""">
-                <label for=" ano" class="form-label">Año</label>
-                <input type="number" class="form-control" id="ano" name="ano" required>
-            </div>
-            <div class=""">
-                <label for=" autor" class="form-label">Autor</label>
-                <input type="text" class="form-control" id="autor" name="autor" required>
-            </div>
-            <div class=""">
-                <label for=" image" class="form-label">Imagen</label>
-                <input type="file" class="form-control" id="image" name="image">
-            </div>
-            <button type="submit" class="">Crear Libro</button>
-        </form>
-    </div>
+    <section id="crearLibroSection" class="crearLibroSection oculto">
+        <div class="container">
+            <h3 class="crearLibroTitulo">Crear Libro</h3>
+            <form id="create-book-form" class="crearLibro-form" onsubmit="createBook(event)">
+                <div class="crearLibro-campos">
+                    <label for="title" class="form-label">Título</label>
+                    <input type="text" class="form-control" id="title" name="title" required>
+                </div>
+                <div class="crearLibro-campos">
+                    <label for="editorial" class="form-label">Editorial</label>
+                    <input type="text" class="form-control" id="editorial" name="editorial" required>
+                </div>
+                <div class="crearLibro-campos">
+                    <label for="description" class="form-label">Descripción</label>
+                    <input type="text" class="form-control" id="description" name="description" required>
+                </div>
+                <div class="crearLibro-campos">
+                    <label for="ano" class="form-label">Año</label>
+                    <input type="number" class="form-control" id="ano" name="ano" required>
+                </div>
+                <div class="crearLibro-campos">
+                    <label for="autor" class="form-label">Autor</label>
+                    <input type="text" class="form-control" id="autor" name="autor" required>
+                </div>
+                <div class="crearLibro-campos">
+                    <label for="image" class="form-label">Imagen</label>
+                    <input type="file" class="btnUpload" id="image" name="image">
+                </div>
+                <div class="botonesCrearLibro">
+                    <button type="submit" class="btnCrearLibro">Crear Libro</button>
+                    <button type="reset" class="btnCancelarCrearLibro" onclick="window.scrollTo(0, 0); document.getElementById('crearLibroSection').classList.add('oculto')">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </section>
 
-    <div>
-        <h1 class="">Editar Libro</h1>
-        <form id="edit-form" class="" style="display: none;" onsubmit="updateBook(event)">
-            <input type="hidden" id="edit-id" name="id">
-            <div class="">
-                <label for="edit-title" class="form-label">Título</label>
-                <input type="text" class="form-control" id="edit-title" name="title" required>
-            </div>
-            <div class="">
-                <label for="edit-editorial" class="form-label">Editorial</label>
-                <input type="text" class="form-control" id="edit-editorial" name="editorial" required>
-            </div>
-            <div class="">
-                <label for="edit-description" class="form-label">Descripción</label>
-                <input type="text" class="form-control" id="edit-description" name="description" required>
-            </div>
-            <div class="">
-                <label for="edit-ano" class="form-label">Año</label>
-                <input type="number" class="form-control" id="edit-ano" name="ano" required>
-            </div>
-            <div class="">
-                <label for="edit-autor" class="form-label">Autor</label>
-                <input type="text" class="form-control" id="edit-autor" name="autor" required>
-            </div>
-            <button type="submit" class="">Actualizar Libro</button>
-        </form>
+    <section id="editarLibroSection" class="editarLibroSection oculto">
+        <div class="container">
+            <h1 class="crearLibroTitulo">Editar Libro</h1>
+            <form id="edit-form" class="editarLibro-form" onsubmit="updateBook(event)">
+                <input type="hidden" id="edit-id" name="id">
+                <div class="crearLibro-campos">
+                    <label for="edit-title" class="form-label">Título</label>
+                    <input type="text" class="form-control" id="edit-title" name="title" required>
+                </div>
+                <div class="crearLibro-campos">
+                    <label for="edit-editorial" class="form-label">Editorial</label>
+                    <input type="text" class="form-control" id="edit-editorial" name="editorial" required>
+                </div>
+                <div class="crearLibro-campos">
+                    <label for="edit-description" class="form-label">Descripción</label>
+                    <input type="text" class="form-control" id="edit-description" name="description" required>
+                </div>
+                <div class="crearLibro-campos">
+                    <label for="edit-ano" class="form-label">Año</label>
+                    <input type="number" class="form-control" id="edit-ano" name="ano" required>
+                </div>
+                <div class="crearLibro-campos">
+                    <label for="edit-autor" class="form-label">Autor</label>
+                    <input type="text" class="form-control" id="edit-autor" name="autor" required>
+                </div>
+                <div class="botonesEditarLibro">
+                    <button type="submit" class="btnEditarLibro">Actualizar Libro</button>
+                    <button type="reset" class="btnCancelarEditarLibro" onclick="window.scrollTo(0, 0); document.getElementById('editarLibroSection').classList.add('oculto')">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </section>
 
-    </div>
- 
     <footer class="footer">
         <div class="footer_container container">
             <picture class="footer_logo">
