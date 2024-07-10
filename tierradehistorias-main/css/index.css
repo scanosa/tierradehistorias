@@ -220,6 +220,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
 }
 
 .bannerTucan {
@@ -246,6 +247,7 @@ footer {
   margin-bottom: var(--spacing24);
   margin-top: var(--spacing48);
   padding-right: 4vw;
+ 
 }
 
 .banner_text {
@@ -413,7 +415,7 @@ footer {
 
 
 
-.loginSection{
+.loginSection,.registerSection{
   margin-left:auto;
   margin-right:auto;
   margin-bottom:var(--spacing48);
@@ -424,7 +426,7 @@ footer {
   padding:var(--spacing24);
   }
 
-.loginTitulo{
+.loginTitulo, .registerTitulo{
   text-align: center;
   font-family: var(--headings-font);
   font-weight: 600;
@@ -434,7 +436,7 @@ footer {
   padding-bottom:var(--spacing24);
 }
 
-.login_imagen{
+.login_imagen,.register_imagen{
   width: 10vw;
   display: block;
   margin-left: auto;
@@ -442,7 +444,7 @@ footer {
  
 }
 
-.login-form{
+.login-form, .register-form{
   display:flex;
   flex-direction: column;
   align-items:center;
@@ -451,7 +453,7 @@ footer {
  
     }
 
-.login-campos{
+.login-campos, .register-campos{
   display:flex;
   flex-direction:column;
   align-items: center;
@@ -463,6 +465,9 @@ footer {
   padding-bottom:var(--spacing32);
 }
 
+.register-campos:last-of-type{
+  padding-bottom:var(--spacing32);
+}
 
 .login-campos label{
   margin-bottom:var(--spacing8);
@@ -470,6 +475,13 @@ footer {
   font-weight: 700;
   width: 30vw;
     }
+
+.register-campos label{
+      margin-bottom:var(--spacing8);
+      font-family: var(--base-font);
+      font-weight: 700;
+      width: 30vw;
+        }
 
 .login-campos input {
 						
@@ -482,7 +494,18 @@ footer {
  
 }
 
-.btnLogin{
+.register-campos input {
+						
+  font-family: var(--base-font);
+  font-size: var(--text-medium);
+  border: 1px solid #cdcdcd;
+  border-radius: 1rem;
+  padding: var(--spacing10);
+  width: 30vw;
+ 
+}
+
+.btnLogin, .btnRegister{
   width: fit-content;
   text-align: center;
   color: white;
@@ -494,6 +517,7 @@ footer {
   padding: 0.625rem 1.875rem 0.625rem 1.875rem;
   border-radius: 15px;
   margin-top: var(--spacing48);
+  cursor: pointer;
 }
 
 

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Tierra de Historias | Iniciar Sesión</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="../css/index.css">
     <script>
         async function loginUser(event) {
@@ -35,74 +35,86 @@
     </script>
 </head>
 <body>
-    <header class="header">
-        <div class="header_container">
-          <nav class="header_navbar container">
-            <picture class="navbar_logo">
-              <a href="./index.html">
-                <img src="./img/logo/logo01a.png" alt="logo Tierra de Historias" />
-              </a>
-            </picture>
-            <ul class="navbar_links">
-              <li><a href="./pages/biblioteca.html">Biblioteca</a></li>
-              <li><a href="./pages/recursosdidacticos.html">Recursos Didácticos</a></li>
-              <li><a href="./pages/faq.html">Preguntas Frecuentes</a></li>
-              <li><a href="./pages/login.html">Acceso</a></li>
-              <li><a href="./pages/register.html">Registrarse</a></li>
-            </ul>
-            <a href="./pages/contacto.html" class="navbar_button">
-              Contactanos
-            </a>
-          </nav>
-        </div>
-      </header>
-    <div class="container">
-        <h1>Login</h1>
-        <form id="login-form" class="mt-3" onsubmit="loginUser(event)">
-            <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
+  <header class="header">
+    <div class="header_container2 ">
+      <picture class="navbar_logo">
+        <a href="../index.html">
+          <img src="../img/logo/logo01a.png" alt="logo Tierra de Historias" />
+        </a>
+      </picture>
+
+      <button class="abrir_menu" id="abrir"><span class="mingcute--menu-fill"></span></button>
+
+      <nav class="header_navbar container" id="nav">
+        <button class="cerrar_menu" id="cerrar"><span class="icon-park-solid--close-one"></span></button>
+        <ul class="navbar_links">
+          <li><a href="./biblioteca.html">Biblioteca</a></li>
+          <li>
+            <a href="./recursosdidacticos.html">Recursos Didácticos</a>
+          </li>
+          <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+          <li><a href="./login.html">Iniciar Sesión</a></li>
+          <li><a href="./register.html">Registrarse</a></li>
+        </ul>
+        <a href="./contacto.html" class="navbar_button">
+          Contactanos
+        </a>
+      </nav>
+    </div>
+  </header>
+    <div class="loginSection container">
+        <h1 class="loginTitulo">Iniciar Sesión</h1>
+        <picture class="login_imagen">
+          <img
+            src="../img/animales/Animales_Carpincho2.png"
+            alt=""
+          />
+        </picture>
+        <form id="login-form" class="login-form" onsubmit="loginUser(event)">
+            <div class="login-campos">
+                <label for="username" class="form-label">Usuario</label>
                 <input type="text" class="form-control" id="username" name="username" required>
             </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
+            <div class="login-campos">
+                <label for="password" class="form-label">Contraseña</label>
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btnLogin">Acceder</button>
         </form>
     </div>
     <footer class="footer">
-        <div class="footer_container container">
-          <picture class="footer_logo">
-            <a href="./index.html">
-              <img src="./img/animales/Animales_Carpincho4.png" alt="logo Tierra de Historias" />
-            </a>
-          </picture>
-          <div class="footer_menu">
-            <p>Menú</p>
-            <ul class="footer_links">
-              <li><a href="./pages/biblioteca.html">Biblioteca</a></li>
-              <li>
-                <a href="./pages/recursosdidacticos.html">Recursos didácticos</a>
-              </li>
-              <li><a href="./pages/faq.html">Preguntas Frecuentes</a></li>
-              <li><a href="./pages/login.html">Acceso</a></li>
-              <li><a href="./pages/register.html">Registrarse</a></li>
-    
-            </ul>
-          </div>
-          <div class="footer_rrss">
-            <p>Redes Sociales</p>
-            <ul class="footer_rrss_iconos">
-              <li>
-                <a href=""><span class="gg--facebook"></span></a>
-              </li>
-              <li>
-                <a href=""><span class="bi--instagram"></span></a>
-              </li>
-            </ul>
-          </div>
+      <div class="footer_container container">
+        <picture class="footer_logo">
+          <a href="../index.html">
+            <img src="../img/animales/Animales_Carpincho4.png" alt="logo Tierra de Historias" />
+          </a>
+        </picture>
+        <div class="footer_menu">
+          <p>Menú</p>
+          <ul class="footer_links">
+            <li><a href="./biblioteca.html">Biblioteca</a></li>
+            <li>
+              <a href="./recursosdidacticos.html">Recursos didácticos</a>
+            </li>
+            <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="./login.html">Iniciar Sesión</a></li>
+            <li><a href="./register.html">Registrarse</a></li>
+  
+          </ul>
         </div>
-        <p>All rights reserved 2024 - Grupo #19 © Vale, Lucas, Seba, Cin</p>
-      </footer>
+        <div class="footer_rrss">
+          <p>Redes Sociales</p>
+          <ul class="footer_rrss_iconos">
+            <li>
+              <a href=""><span class="gg--facebook"></span></a>
+            </li>
+            <li>
+              <a href=""><span class="bi--instagram"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>All rights reserved 2024 - Grupo #19 © Vale, Lucas, Seba, Cin</p>
+    </footer>
 </body>
 </html>
