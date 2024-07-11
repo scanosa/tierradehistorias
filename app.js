@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 const path = require('path');
 const multer = require('multer');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const verifyToken = require('./middleware/authMiddleware'); // Importa el middleware de autenticación
 
 // Middleware de CORS

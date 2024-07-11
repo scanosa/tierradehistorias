@@ -39,10 +39,37 @@
     </div>
   </header>
   <main>
-    <section class="container">
-      <img src="../img/animales/Animales_Tucan2.png" class="recursos_imagen" alt="">
-      <h4 class="conoceTitulo">Próximamente!</h4>
+    <section class="exploraBiblio container">
+      <div class="conoceBiblioContent container">
+        <h2 class="exploraTitulo">Explorá nuestra biblioteca</h2>
+        <p class="exploraBajada">
+          ¡Cientos de libros y audiolibros listos para descargar te están esperando!
+        </p>
+        <div class="imgytitulo">
+          <img src="../img/animales/Animales_Libros.png" alt="">
+          <div>
+            <form class="formBusqueda" id="searchForm">
+              <div class="buscarContainer">
+                <input type="text" id="searchInput" name="q" placeholder="Buscar..." />
+                <span class="iconamoon--search-light"></span>
+              </div>
+              <button type="button" id="clearSearchButton">Limpiar búsqueda</button>
+            </form>
+          </div>
+          <img src="../img/animales/Animales_Tablet.png" alt="">
+        </div>
+      </div>
+    </section>
 
+    <section class="biblioteca container">
+      <div class="bibliotecaGrilla"></div>
+      <div class="bibliotecaPaginado"></div>
+    </section>
+
+    <section class="resultadosBusqueda container" style="display: none;">
+      <h2>Resultados de la búsqueda</h2>
+      <div class="resultadosGrilla"></div>
+      <div class="resultadosPaginado"></div>
     </section>
   </main>
 
@@ -81,7 +108,7 @@
     <p>All rights reserved 2024 - Grupo #19 © Vale, Lucas, Seba, Cin</p>
   </footer>
 
-  <script src="../js/index.js"></script>
+  <script src="../js/biblioteca.js"></script>
 </body>
 
 </html>
