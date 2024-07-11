@@ -2,7 +2,7 @@ const baseUrl = 'https://goodreads-books.p.rapidapi.com/search';
 const options = {
   method: 'GET',
   headers: {
-    'x-rapidapi-key': 'c42af4d715msh8b1dd5262a9423bp1cc6bbjsne4117dfebd1d',
+    'x-rapidapi-key': 'cb2170fd23msh7eca7e6835f0bb3p1be09fjsnb6869c7de780',
     'x-rapidapi-host': 'goodreads-books.p.rapidapi.com'
   }
 };
